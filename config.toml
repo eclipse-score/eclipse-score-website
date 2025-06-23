@@ -1,4 +1,4 @@
-baseurl = "https://eclipse.dev/hugo-eclipsefdn-website-boilerplate"
+baseurl = "https://eclipse.dev/score"
 DefaultContentLanguage = "en"
 title = "Eclipse S-CORE"
 theme = "hugo-solstice-theme"

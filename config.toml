@@ -1,7 +1,7 @@
 baseurl = "https://eclipse.dev/score"
 DefaultContentLanguage = "en"
 title = "Eclipse S-CORE"
-theme = "hugo-solstice-theme"
+#theme = "hugo-solstice-theme"
 metaDataFormat = "yaml"
 disableKinds = []
 enableRobotsTXT = true

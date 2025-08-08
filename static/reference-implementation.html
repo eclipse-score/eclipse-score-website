@@ -33,6 +33,7 @@
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/styleguide.css" />
     <link rel="stylesheet" href="css/campus.css" />
+    <link rel="stylesheet" href="css/about-us.css" />
   </head>
   <body>
     <header class="main-pages-header campus-page-header w-100">
@@ -203,163 +204,96 @@
               How to get in contact with S-CORE
             </h2>
             <p class="max-w-100">
-             If you want to get into contact with S-CORE, these are your primary entry points:
+             If you want to get into contact with S-CORE, these are your primary entry points: <br><br>
 
-            Project Mailing List:
+            <strong class="fw-semibold">Project Mailing List:</strong><br>
+                <a  href="mailto:score-dev@eclipse.org" class="link" target="_blank"
+                  >score-dev@eclipse.org 
+            </a><br>     <br> 
 
-                score-dev@eclipse.org
-            Architectural Discussion:
-
-                #score-project-channel-public
-
-            General Information / Alignment regarding S-CORE as a basis for distributions & products:
-            Contact one of the project leads of S-CORE https://projects.eclipse.org/projects/automotive.score/who
-
+            <strong class="fw-semibold">Architectural Discussion:</strong> <br>
+              <a  href="https://sdvworkinggroup.slack.com/archives/C083Z4VL90B" class="link" target="_blank"
+                  >#score-project-channel-public 
+                
+            </a><br>     <br>   
+            
+            <strong class="fw-semibold">Eclipse S-CORE Project Office Hours:  </strong> <br>
+             
+            <a  href="https://calendar.google.com/calendar/u/0/embed?src=c_2ampi2bmoka3qter4dceap1d5g@group.calendar.google.com&ctz=Europe/Berlin" class="link" target="_blank"
+                  >Monday 13.00 - 14.00 (Weekly)
+                
+            </a> 
+            </p><br><br>
+          
+            <strong class="fw-semibold">General Information / Alignment regarding S-CORE as a basis for distributions & products:  </strong> <br>
+             
+            <a  href="https://projects.eclipse.org/projects/automotive.score/who" class="link" target="_blank"
+                  >Contact one of the project leads of SCORE
+                
+            </a> 
             </p>
-            <h2 class="h2 mb-3 fw-semibold text-capitalize">
-              How to get involved
-            </h2>
-            <p class="max-w-100">
+            
+          </div>  </div> </section>
 
-              
-            </p>
-          </div>
+         <section class="esc-section esc-communities-section">
+        <div class="container">
+          <div class="pages-title mb-4">
+                <h2 class="h2 fw-bold mb-3 text-white">
+                  How to start your Contribution Journey
+                </h2>
+                
+                 <p class="max-w-100">
+                  Active Contributions to the S-CORE project are the basis for getting involved. 
+                  The S-CORE Project works according to the Eclipse Project Handbook and has named and elected project leads and committers 
+                  (see 
+                  <a  href="https://projects.eclipse.org/projects/automotive.score" class="link" target="_blank"
+                  >Eclipse Safe Open Vehicle Core               
+                  </a> 
+                  ). <br><br>The direction of the S-CORE project is discussed and decided in the project lead circle, 
+                  the technical direction is created and upfront in the tech lead circle. Meeting notes are transparent via the
 
-          <!-- Tabs -->
-          <ul
-            class="nav nav-pills implementations-tabs rounded-tabs-container rounded-pill overflow-hidden mb-4 d-flex text-center"
-            id="implementationsTab"
-            role="tablist"
-          >
-            <li class="nav-item flex-fill" role="presentation">
-              <button
-                class="nav-link active w-100"
-                id="executable-sw-platform-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#executable-sw-platform"
-                type="button"
-                role="tab"
-              >
-                Executable SW-Platform
-              </button>
-            </li>
-            <li class="nav-item flex-fill" role="presentation">
-              <button
-                disabled
-                class="nav-link w-100"
-                id="operating-system-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#operating-system"
-                type="button"
-                role="tab"
-              >
-                Operating System
-              </button>
-            </li>
-            <li class="nav-item flex-fill" role="presentation">
-              <button
-                disabled
-                class="nav-link w-100"
-                id="board-support-package-tab"
-                data-bs-toggle="pill"
-                data-bs-target="#board-support-package"
-                type="button"
-                role="tab"
-              >
-                Board Support Package
-              </button>
-            </li>
-          </ul>
+                  <a  href="https://github.com/orgs/eclipse-score/discussions" class="link" target="_blank"
+                  >S-CORE GitHub Discussions.               
+                  </a> <br><br>
 
-          <!-- Tab Content -->
-          <div class="tab-content" id="implementationsTabContent">
-            <!-- Executable SW-Platform -->
-            <div
-              class="tab-pane fade show active"
-              id="executable-sw-platform"
-              role="tabpanel"
-            >
-              <section class="code-example-section py-4">
-                <div class="container">
-                  <div class="row g-4 align-items-stretch">
-                    <!-- Comment Block -->
-                    <div class="col-md-6 text-white">
-                      <div class="comment-block">
-                        <pre><code>Utilize QEMU to emulate multiple architectures and test your applications. Discover how S-CORE integrates effectively with QEMU environments, facilitating development and testing.
+                </p>
+                <p class="max-w-100">
+                    We aim to build a safety ready full stack architecture, 
+                    where components fit to each other in automotive grade Software Quality and performance. To achieve this, we follow a strict
+                    
+                  <a  href="https://eclipse-score.github.io/score/main/score_releases/index.html#releases" class="link" target="_blank"
+                  >feature roadmap and architecture           
+                  </a> 
+                   and a
 
-- **Headline:** Versatile Emulation Solutions
+                  <a  href="https://eclipse-score.github.io/process_description/main/index.html" class="link" target="_blank"
+                  >rigid software development process         
+                  </a> <br><br>
 
-- **Sub-headline:** Testing and Development with QEMU and 
-S-CORE
+                </p>
 
-- **Strengths of QEMU:**  
-- **Multi-Architecture Support:** Capable of emulating a variety of architectures to support S-CORE applications.
-- **Integration Capabilities:** Provides ease of deployment and effective integration with S-CORE components.
+                <p class="max-w-100">
+                   Contributions to the S-CORE project must therefore follow the technical direction of the project and the S-CORE architecture. 
+                   For an introduction on how to contribute, please check out our 
+                  <a  href="https://eclipse-score.github.io/score/main/contribute/contribution_request/index.html#doc__contr_guideline" class="link" target="_blank"
+                  >Contribution Guideline (doc__contr_guideline).        
+                  </a> <br><br>
+                </p>
+                
+                <p class="max-w-100">
+                  Based on successful code contributions to the S-CORE roadmap, further steps in involvement (like becoming a committer) 
+                  will be handled according to the rules of the Eclipse Foundation Project Handbook. 
+                  
+                  We value real code based collaboration and will judge new potential contributors and committers mainly on the validity of their work. 
+                  Active and sustaining contributions are the basis for the ability to shape S-CORE.
 
-- **Getting Started:**  
-- **Download Link:** Access QEMU binaries compatible with S-CORE development.
-- **Setup Documentation:** Step-by-step guide for setting up and configuring QEMU with S-CORE.
-</code></pre>
-                      </div>
-                    </div>
-
-                    <!-- Code Block -->
-                    <div class="col-md-6 code-block-container">
-                      <div class="code-block position-relative">
-                        <button
-                          class="copy-btn"
-                          title="Copy Code"
-                          onclick="copyCode()"
-                        >
-                          <img src="images/icons/white-copy.svg" alt="" />
-                        </button>
-                        <!-- prettier-ignore -->
-                        <ol class="line-numbers">
-                            <li class="code-gray"><span>//&nbsp;**Code&nbsp;Example:**</span> <span>-&gt;</span></li>
-                            <li><span>&nbsp;</span></li>
-                            <li class="code-orange"><span>```bash #!/bin/bash</span></li>
-                            <li><span>&nbsp;</span></li>
-                            <li class="code-pink"><span>#&nbsp;Define&nbsp;QEMU&nbsp;command&nbsp;to&nbsp;start&nbsp;with&nbsp;specific&nbsp;settings</span></li>
-                            <li class="code-pink"><span>qemu-system-x86_64&nbsp;\</span></li>
-                            <li><span></span></li><br/>
-                            
-                            <li class="code-blue"><span>&nbsp;&nbsp;&nbsp;&nbsp;-drive&nbsp;file=.qcow2,format=qcow2&nbsp;\</span></li>
-                            <li class="code-blue"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-m&nbsp;4G&nbsp;\</span></li>
-                            <li class="code-blue"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-smp&nbsp;4&nbsp;\</span></li>
-                            <li class="code-blue"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-enable-kvm&nbsp;\</span></li>
-                            <li class="code-blue"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-net&nbsp;nic,model=e1000&nbsp;\</span></li>
-                            <li class="code-blue"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-net&nbsp;user</span></li>
-                            <li class="code-blue"><span>&nbsp;</span></li>
-                            <li class="code-pink"><span>echo&nbsp;"QEMU&nbsp;started&nbsp;with&nbsp;S-CORE&nbsp;disk&nbsp;image."</span></li>
-                            <li><span></span></li><br/>
-                            <li><span></span></li><br/>
-                            <li><span></span></li><br/>
-                            <li><span></span></li><br/>
-                            <li><span></span></li><br/>
-                        </ol>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-            </div>
-
-            <!-- Operating System -->
-            <div class="tab-pane fade" id="operating-system" role="tabpanel">
-              <h1>Operating System Content</h1>
-            </div>
-
-            <!-- Board Support Package -->
-            <div
-              class="tab-pane fade"
-              id="board-support-package"
-              role="tabpanel"
-            >
-              <h1>Board Support Package Content</h1>
-            </div>
-          </div>
+                </p>               
+              </div>
+            </div>         
         </div>
-      </section>
+      </section> 
+        
+      <section><br><br></section>
 
       <section class="esc-section esc-stay-connected-container-section pt-0">
         <div class="container">
@@ -380,12 +314,13 @@ S-CORE
                 <div
                   class="connected-card d-flex align-items-center justify-content-start h-100"
                 >
-                  <img
+                  <a href="https://projects.eclipse.org/projects/automotive.score/who" class="" download
+                    ><img
                     src="images/campus/share.svg"
                     alt="Join Icon"
                     width="48"
                     class="me-3 icon"
-                  />
+                  /></a>
                   <div>
                     <h5 class="h5 fw-semibold mb-1">Join S-CORE</h5>
                     <p class="text-muted mb-0">Connect With Us!</p>
@@ -398,7 +333,7 @@ S-CORE
                 <div
                   class="connected-card d-flex align-items-center justify-content-start h-100"
                 >
-                  <a href="Get_Started_With_Smallpdf.pdf" class="" download
+                  <a href="news.html" class="" download
                     ><img
                       src="images/campus/document-download.svg"
                       alt="Download Icon"
@@ -406,8 +341,8 @@ S-CORE
                       class="me-3 icon"
                   /></a>
                   <div>
-                    <h5 class="h5 fw-semibold mb-1">Download</h5>
-                    <p class="text-muted mb-2">Our latest Whitepaper!</p>
+                    <h5 class="h5 fw-semibold mb-1">Stay up to date!</h5>
+                    <p class="text-muted mb-2">Read our latest news!</p>
                   </div>
                 </div>
               </div>
@@ -417,7 +352,7 @@ S-CORE
                   class="connected-card d-flex align-items-center justify-content-start h-100"
                 >
                   <div class="me-3 d-flex gap-2">
-                    <a href="https://linkedin.com" target="_blank">
+                    <a href="https://www.linkedin.com/showcase/software-defined-vehicle/posts/?feedView=all" target="_blank">
                       <img
                         class="icon"
                         src="images/campus/mage_linkedin.svg"
@@ -425,7 +360,7 @@ S-CORE
                         width="48"
                       />
                     </a>
-                    <a href="https://slack.com" target="_blank">
+                    <a href="https://sdvworkinggroup.slack.com/archives/C083Z4VL90B" target="_blank">
                       <img
                         class="icon"
                         src="images/campus/slack.svg"

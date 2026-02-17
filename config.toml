@@ -4,7 +4,9 @@ title = "Eclipse S-CORE"
 #theme = "hugo-solstice-theme"
 metaDataFormat = "yaml"
 disableKinds = []
+
 enableRobotsTXT = true
+uglyURLs = true
 pluralizeListTitles = false
 
 [Params]
@@ -88,3 +90,8 @@ pluralizeListTitles = false
 # or to define your own menu links.
 
 # [[menu.main]]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

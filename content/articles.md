@@ -1,0 +1,286 @@
+---
+title: "Eclipse S-CORE"
+render_raw: true
+extra_styles:
+  - "css/bootstrap.min.css"
+  - "css/loading.css"
+  - "css/navbar.css"
+  - "css/globals.css"
+  - "css/footer.css"
+  - "css/styleguide.css"
+  - "css/news.css"
+extra_scripts:
+  - "js/jquery-3.7.1.min.js"
+  - "js/bootstrap.min.js"
+  - "js/loading.js"
+---
+
+<header class="main-pages-header news-page-header w-100">
+      <nav
+        class="navbar navbar-expand-xl navbar-light bg-light frame w-100"
+        style="min-height: 64px"
+      >
+        <div class="container px-3">
+          <div class="navbar-content">
+            <a
+              class="navbar-brand d-flex align-items-center logo"
+              href="index.html"
+            >
+              <div class="logo-icon me-0">
+                <img class="logo-text" src="images/icons/logo.svg" alt="Logo" />
+              </div>
+              <span class="logo-title h1 mb-0 fw-semibold">Eclipse S-CORE</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation-links">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="news.html"
+                    >News/Events</a
+                  >
+                  <div
+                    class="active-indicator d-none d-lg-block"
+                    aria-hidden="true"
+                  ></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="training-modules.html">Join us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html" >FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://eclipse-score.github.io/score/main/" target="_blank">Docs</a>
+                </li>
+                
+              </ul>
+              <div
+                class="search-form-container d-flex align-items-center gap-2"
+              > 
+                <a
+                  href="https://github.com/eclipse-score"
+                  class="github-link ms-2"
+                  aria-label="Visit our GitHub"
+                >
+                  <div class="github-icon" aria-hidden="true">
+                    <img
+                      src="images/icons/github.svg"
+                      alt="GitHub Icon"
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section
+        class="pages-header-content w-100 flex-grow-1 d-flex align-items-end py-5"
+      >
+        <div class="container">
+          <div class="pages-title">
+            <h2 class="h2 text-white">News & Events</h2>
+          </div>
+          <div class="bredcrumb-container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="breadcrumb-link text-white"
+                    >Home</a
+                  >
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="news.html" class="breadcrumb-link text-white"
+                    >News &amp; Events</a
+                  >
+                </li>
+                <li
+                  class="breadcrumb-item active text-white"
+                  aria-current="page"
+                >
+                  Articles
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="main-section p-0 min-vh-100 d-flex flex-column">
+      <section class="esc-pages-section nav-tabs-section">
+        <div class="container">
+          <div class="nav-tabs-wrapper">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Conferences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="press_releases.html">Press Releases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="articles.html">Articles & News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="townhalls.html">Townhalls</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="esc-section esc-news-container-section pt-0 min-vh-100 mt-4"
+      >
+        <div class="container">
+          <div class="row w-100 g-4">
+            <div class="col-12 col-xl-8 gap-3 mt-0">
+              <div class="d-flex flex-column gap-3">
+                <div class="main-blog-item-card d-flex flex-column gap-3">
+                  <div
+                    class="blog-img d-flex align-items-center justify-content-center"
+                  >
+                    <img src="images/news/s-core_05_release_teaser.png" alt="" />
+                  </div>
+                  <div class="blog-item-content">
+                    <div
+                      class="top-pick-date d-flex align-items-center gap-2 mb-2"
+                    >
+                      <span class="icon d-flex align-items-center">
+                        <img src="images/icons/calendar.svg" alt="" />
+                      </span>
+                      <span class="date">Nov 6th, 2025</span>
+                    </div>
+                    <h2 class="h2 mb-3">
+                      Eclipse S-CORE 0.5 – What’s inside the first public release.
+                    </h2>
+                    <p>
+                      Source: Eclipse SDV WG Linkedin <br/><br/>
+                    </p>
+                    <p>
+                        The first version of Eclipse S-CORE (Safe Open Vehicle Core) lays the groundwork for open, safety-ready automotive software.<br/>
+                        
+                    </p>
+                    <a
+                      class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
+                      href="https://www.linkedin.com/posts/software-defined-vehicle_s-core-05-release-activity-7392145693861363712-JWqw" target="_blank"
+                    >
+                      Read More and Discuss
+                    </a>
+                  </div>
+                </div>
+                <div class="main-blog-item-card d-flex flex-column gap-3">
+                  <div
+                    class="blog-img d-flex align-items-center justify-content-center"
+                  >
+                    <img src="images/news/EF_Newsletter_2025_09.PNG" alt="" />
+                  </div>
+                  <div class="blog-item-content">
+                    <div
+                      class="top-pick-date d-flex align-items-center gap-2 mb-2"
+                    >
+                      <span class="icon d-flex align-items-center">
+                        <img src="images/icons/calendar.svg" alt="" />
+                      </span>
+                      <span class="date">Sept 30, 2025</span>
+                    </div>
+                    <h2 class="h2 mb-3">
+                      Eclipse S-CORE: A new approach to building automotive software together
+                    </h2>
+                    <p>
+                      by Valerie Hasler and Memsud Godinjak 
+                    </p>
+                    <a
+                      class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
+                      href="https://newsroom.eclipse.org/eclipse-newsletter/2025/september/eclipse-s-core-new-approach-building-automotive-software-together"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+              
+              </div>
+              <div class="text-center mt-3">
+                <a
+                  class="show-more btn btn-primary main-outline-primary mt-4 d-inline-block text-center"
+                  href="#"
+                >
+                  Show More
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-xl-4 mt-xl-0 mt-5">
+              <div class="main-search-top-picks-card d-flex flex-column gap-4">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="container">
+          <div class="row justify-content-start mb-3">
+            
+          <div class="row justify-content-start mb-3">
+            <div class="col-12 text-start">
+              <span class="footer-copyright fw-bold text-white"
+                >Copyright © Eclipse Foundation AISBL. All Rights Reserved.</span
+              >
+            </div>
+          </div>
+          <div class="row justify-content-start">
+            <div class="col-12 col-md-auto d-flex justify-content-start gap-3">
+              <a
+                href="https://www.eclipse.org/legal/termsofuse.php"
+                class="footer-policy-link text-white text-decoration-none"
+                >Terms of Use</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/privacy.php"
+                class="footer-policy-link text-white text-decoration-none"
+                >Privacy Policy</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/copyright.php"
+                class="footer-policy-link text-white text-decoration-none"
+                >Copyright Agent</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/epl-2.0/"
+                class="footer-policy-link text-white text-decoration-none"
+                >Eclipse Public License</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/"
+                class="footer-policy-link text-white text-decoration-none"
+                >Legal Resources</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <div id="loading-screen">
+      <img src="images/icons/logo.svg" alt="Logo" class="loading-logo" />
+    </div>

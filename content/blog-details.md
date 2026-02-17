@@ -1,0 +1,359 @@
+---
+title: "S-CORE"
+render_raw: true
+extra_styles:
+  - "css/bootstrap.min.css"
+  - "css/loading.css"
+  - "css/owl.carousel.min.css"
+  - "css/navbar.css"
+  - "css/globals.css"
+  - "css/footer.css"
+  - "css/styleguide.css"
+  - "css/news.css"
+extra_scripts:
+  - "js/jquery-3.7.1.min.js"
+  - "js/bootstrap.min.js"
+  - "js/owl.carousel.min.js"
+  - "js/news.js"
+  - "js/loading.js"
+---
+
+<header class="main-pages-header news-details-page-header w-100">
+      <nav
+        class="navbar navbar-expand-xl navbar-light bg-light frame w-100"
+        style="min-height: 64px"
+      >
+        <div class="container px-3">
+          <div class="navbar-content">
+            <a
+              class="navbar-brand d-flex align-items-center logo"
+              href="index.html"
+            >
+              <div class="logo-icon me-0">
+                <img class="logo-text" src="images/icons/logo.svg" alt="Logo" />
+              </div>
+              <span class="logo-title h1 mb-0 fw-semibold">S-CORE</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation-links">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="news.html"
+                    >News/Events</a
+                  >
+                  <div
+                    class="active-indicator d-none d-lg-block"
+                    aria-hidden="true"
+                  ></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="training-modules.html">Campus</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html" >FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://eclipse-score.github.io/score/main/" target="_blank">Docs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Join us</a>
+                </li>
+              </ul>
+              <div
+                class="search-form-container d-flex align-items-center gap-2"
+              >
+                <form class="d-flex search-form" role="search">
+                  <label for="site-search" class="visually-hidden"
+                    >Search This Site</label
+                  >
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    id="site-search"
+                    placeholder="Search This Site"
+                    aria-label="Search"
+                  />
+                  <button
+                    class="btn btn-outline-secondary btn-search"
+                    type="submit"
+                    aria-label="Search"
+                  >
+                    <img
+                      src="images/icons/search-normal.svg"
+                      alt=""
+                      class="search-icon"
+                    />
+                  </button>
+                </form>
+                <a
+                  href="#"
+                  class="github-link ms-2"
+                  aria-label="Visit our GitHub"
+                >
+                  <div class="github-icon" aria-hidden="true">
+                    <img
+                      src="images/icons/github.svg"
+                      alt="GitHub Icon"
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section
+        class="pages-header-content w-100 flex-grow-1 d-flex align-items-end py-5"
+      >
+        <div class="container">
+          <div class="pages-title">
+            <h2 class="h2 text-white">
+              Unlocking Innovation: The Power of Open Source Software
+            </h2>
+          </div>
+          <div class="bredcrumb-container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="breadcrumb-link text-white"
+                    >Home</a
+                  >
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="news.html" class="breadcrumb-link text-white"
+                    >News &amp; Events</a
+                  >
+                </li>
+                <li
+                  class="breadcrumb-item active text-white"
+                  aria-current="page"
+                >
+                  <span class="breadcrumb-text">
+                    Unlocking Innovation: The Power of Open Source Software
+                  </span>
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="main-section p-0 min-vh-100 d-flex flex-column">
+      <section
+        class="esc-section esc-news-details-container-section min-vh-100"
+      >
+        <div class="container">
+          <div class="blog-item-content">
+            <div class="top-pick-date d-flex align-items-center gap-2 mb-3">
+              <span class="icon d-flex align-items-center">
+                <img src="images/icons/calendar.svg" alt="" />
+              </span>
+              <span class="date">14 Feb, 2024</span>
+            </div>
+
+            <p>
+              One of the greatest advantages of open source software is its
+              community-driven nature, which brings together developers from
+              across the world. These contributors often come from vastly
+              different backgrounds, cultures, and levels of experience — yet
+              they unite around a shared goal: building better software. This
+              global collaboration leads to diverse perspectives, creative
+              problem-solving, and faster identification of bugs or security
+              flaws. Since the code is open and accessible, anyone can
+              contribute, whether it’s by writing new features, improving
+              documentation, or testing for issues. This open process allows the
+              software to evolve rapidly, often outpacing traditional
+              closed-source development. With thousands of eyes reviewing and
+              refining the code, quality tends to increase over time. The sense
+              of shared ownership among contributors also builds trust and
+              commitment within the community. Unlike proprietary systems, where
+              innovation is limited to internal teams, open source benefits from
+              decentralized innovation at scale. It’s this collaborative spirit
+              that turns open source from just code into a movement — one that’s
+              shaping the future of technology.
+            </p>
+          </div>
+
+          <div class="recommended-blogs mt-5">
+            <div class="esc-header esc-header-news mb-4">
+              <h2 class="h2">Recommended</h2>
+            </div>
+            <div class="esc-content">
+              <div class="owl-carousel-wrapper position-relative">
+                <div class="owl-carousel news-slider">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="images/home/news-img.jpg" alt="" />
+                    </div>
+                    <div class="card-body p-0 py-4">
+                      <h4 class="title mb-2">Next Eclipse Community Event</h4>
+                      <p class="desc">
+                        Next Eclipse Community Event, June 4th 2025 in Starnberg
+                      </p>
+                    </div>
+                    <div class="card-actions">
+                      <a class="learn-more" href="blog-details.html"
+                        >Learn More
+                        <div class="icon">
+                          <img src="images/icons/right-arrow.svg" alt="" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="images/home/news-img.jpg" alt="" />
+                    </div>
+                    <div class="card-body p-0 py-4">
+                      <h4 class="title mb-2">Next Eclipse Community Event</h4>
+                      <p class="desc">
+                        Next Eclipse Community Event, June 4th 2025 in Starnberg
+                      </p>
+                    </div>
+                    <div class="card-actions">
+                      <a class="learn-more" href="blog-details.html"
+                        >Learn More
+                        <div class="icon">
+                          <img src="images/icons/right-arrow.svg" alt="" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="images/home/news-img.jpg" alt="" />
+                    </div>
+                    <div class="card-body p-0 py-4">
+                      <h4 class="title mb-2">Next Eclipse Community Event</h4>
+                      <p class="desc">
+                        Next Eclipse Community Event, June 4th 2025 in Starnberg
+                      </p>
+                    </div>
+                    <div class="card-actions">
+                      <a class="learn-more" href="blog-details.html"
+                        >Learn More
+                        <div class="icon">
+                          <img src="images/icons/right-arrow.svg" alt="" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="images/home/news-img.jpg" alt="" />
+                    </div>
+                    <div class="card-body p-0 py-4">
+                      <h4 class="title mb-2">Next Eclipse Community Event</h4>
+                      <p class="desc">
+                        Next Eclipse Community Event, June 4th 2025 in Starnberg
+                      </p>
+                    </div>
+                    <div class="card-actions">
+                      <a class="learn-more" href="blog-details.html"
+                        >Learn More
+                        <div class="icon">
+                          <img src="images/icons/right-arrow.svg" alt="" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="images/home/news-img.jpg" alt="" />
+                    </div>
+                    <div class="card-body p-0 py-4">
+                      <h4 class="title mb-2">Next Eclipse Community Event</h4>
+                      <p class="desc">
+                        Next Eclipse Community Event, June 4th 2025 in Starnberg
+                      </p>
+                    </div>
+                    <div class="card-actions">
+                      <a class="learn-more" href="blog-details.html"
+                        >Learn More
+                        <div class="icon">
+                          <img src="images/icons/right-arrow.svg" alt="" />
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <button class="custom-prev" style="display: none">
+                  <img src="images/icons/chevron-left.svg" alt="" />
+                </button>
+                <button class="custom-next" style="display: none">
+                  <img src="images/icons/chevron-right.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="container">
+          <div class="row justify-content-start mb-3">
+            
+          <div class="row justify-content-start mb-3">
+            <div class="col-12 text-start">
+              <span class="footer-copyright fw-bold text-white"
+                >All Right Reserved For Eclipse © 2024</span
+              >
+            </div>
+          </div>
+          <div class="row justify-content-start">
+            <div class="col-12 col-md-auto d-flex justify-content-start gap-3">
+              <a
+                href="https://www.eclipse.org/legal/termsofuse.php"
+                class="footer-policy-link text-white text-decoration-none"
+                >Terms of Use</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/privacy.php"
+                class="footer-policy-link text-white text-decoration-none"
+                >Privacy Policy</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/copyright.php"
+                class="footer-policy-link text-white text-decoration-none"
+                >Copyright Agent</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/epl-2.0/"
+                class="footer-policy-link text-white text-decoration-none"
+                >Eclipse Public License</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/"
+                class="footer-policy-link text-white text-decoration-none"
+                >Legal Resources</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <div id="loading-screen">
+      <img src="images/icons/logo.svg" alt="Logo" class="loading-logo" />
+    </div>

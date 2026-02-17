@@ -1,0 +1,319 @@
+---
+title: "Eclipse S-CORE"
+render_raw: true
+extra_styles:
+  - "css/bootstrap.min.css"
+  - "css/loading.css"
+  - "css/navbar.css"
+  - "css/globals.css"
+  - "css/footer.css"
+  - "css/styleguide.css"
+  - "css/news.css"
+extra_scripts:
+  - "js/jquery-3.7.1.min.js"
+  - "js/bootstrap.min.js"
+  - "js/loading.js"
+---
+
+<header class="main-pages-header news-page-header w-100">
+      <nav
+        class="navbar navbar-expand-xl navbar-light bg-light frame w-100"
+        style="min-height: 64px"
+      >
+        <div class="container px-3">
+          <div class="navbar-content">
+            <a
+              class="navbar-brand d-flex align-items-center logo"
+              href="index.html"
+            >
+              <div class="logo-icon me-0">
+                <img class="logo-text" src="images/icons/logo.svg" alt="Logo" />
+              </div>
+              <span class="logo-title h1 mb-0 fw-semibold">Eclipse S-CORE</span>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation-links">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="news.html"
+                    >News/Events</a
+                  >
+                  <div
+                    class="active-indicator d-none d-lg-block"
+                    aria-hidden="true"
+                  ></div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="training-modules.html">Join us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about-us.html">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="faq.html" >FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://eclipse-score.github.io/score/main/" target="_blank">Docs</a>
+                </li>
+                
+              </ul>
+              <div
+                class="search-form-container d-flex align-items-center gap-2"
+              >
+              
+                <a
+                  href="https://github.com/eclipse-score" target="_blank" rel="noopener noreferrer"
+                  class="github-link ms-2"
+                  aria-label="Visit our GitHub"
+                >
+                  <div class="github-icon" aria-hidden="true">
+                    <img
+                      src="images/icons/github.svg"
+                      alt="GitHub Icon"
+                      class="img-fluid"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <section
+        class="pages-header-content w-100 flex-grow-1 d-flex align-items-end py-5"
+      >
+        <div class="container">
+          <div class="pages-title">
+            <h2 class="h2 text-white">News & Events</h2>
+          </div>
+          <div class="bredcrumb-container">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb mb-0">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="breadcrumb-link text-white"
+                    >Home</a
+                  >
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="news.html" class="breadcrumb-link text-white"
+                    >News &amp; Events</a
+                  >
+                </li>
+                <li
+                  class="breadcrumb-item active text-white"
+                  aria-current="page"
+                >
+                  Press Releases
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="main-section p-0 min-vh-100 d-flex flex-column">
+      <section class="esc-pages-section nav-tabs-section">
+        <div class="container">
+          <div class="nav-tabs-wrapper">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">Conferences</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="press_releases.html">Press Releases</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="articles.html">Articles & Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="townhalls.html">Townhalls</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="esc-section esc-news-container-section pt-0 min-vh-100 mt-4">
+        <div class="container">
+          <div class="row w-100 g-4">
+            <div class="col-12 col-xl-8 gap-3 mt-0">
+
+              <div class="d-flex flex-column gap-3">
+                <div class="main-blog-item-card d-flex flex-column gap-3">
+                  <div class="blog-item-content">
+                    <div
+                      class="top-pick-date d-flex align-items-center gap-2 mb-2"
+                    >
+                      <span class="icon d-flex align-items-center">
+                        <img src="images/icons/calendar.svg" alt="" />
+                      </span>
+                      <span class="date">Nov 12, 2025</span>
+                    </div>
+
+                    <p>
+                      Source: Eclipse S-CORE Project
+                    </p></br>
+
+                    <h4 class="h4 mb-3">
+                      Eclipse S-CORE (Eclipse Safe Open Vehicle Core) Project unites with Qualcomm to Advance Open-Source Middleware for Next-Gen Vehicles
+                    </h4></br>
+                    <p>
+                         November 12th, 2025 — The Eclipse Safe Open Vehicle Core (S-CORE) project today announced the active participation of Qualcomm Technologies, Inc. as a new member of its open-source community.
+                        By leveraging Qualcomm Technologies Inc.’s Snapdragon® Digital Chassis™ solutions, S-CORE will run seamlessly on Qualcomm Technologies’ established high-performance hardware for future software-defined vehicles (SDVs). This collaboration further expands the reach of the S-CORE community, as a significant share of today’s safety-critical and secure automotive systems already rely on Qualcomm Technologies’ hardware.</br></br>
+
+                        Hosted by the Eclipse Foundation under the purview of the Eclipse Software Defined Vehicle Working Group, Eclipse S-CORE, is an open-source initiative delivering a shared, safety-aligned middleware platform for high-performance automotive compute platforms. Developed by leading automotive and software companies — including Accenture GmbH, Aumovio SE, BMW Group, Elektrobit Automotive GmbH, ETAS GmbH, Mercedes-Benz Tech Innovation GmbH, Qualcomm Technologies, Inc., and Qorix GmbH — S-CORE provides a scalable, modular, and interoperable foundation for safety-critical components, reducing duplication, accelerating SDV development, and promoting industry-wide standardization.</br></br>
+
+                        “Open collaboration is at the heart of solving the growing complexity of modern vehicle software,” said Mike Milinkovich, executive director of the Eclipse Foundation. “Through Eclipse S-CORE, we’re building a fully open, safety-aligned middleware foundation that helps automakers and suppliers focus on innovation instead of duplication. We’re delighted to welcome Qualcomm Technologies to this global community and the important work ahead.”</br></br>
+
+                        “Qualcomm Technologies’ engagement with S-CORE represents a pivotal step toward democratizing access to high-performance automotive middleware,” said Laxmi Rayapudi, VP, Product Management, Qualcomm Technologies, Inc. “By aligning our Snapdragon Digital Chassis solutions with the S-CORE community, we’re empowering automakers and Tier-1 suppliers to innovate faster and deliver intelligent, connected, and safer vehicles.”</br></br>
+
+                        The S-CORE project aims to establish a vendor-neutral, open-source software stack that addresses the increasing complexity of software-defined vehicles. Qualcomm Technologies’ contribution will streamline development workflows, reduce time-to-market, and foster a vibrant ecosystem of automotive software innovation — reinforcing the community’s shared vision to enable AI-driven, software-centric mobility at global scale.</br></br>
+
+                        Snapdragon and Digital Chassis are trademarks or registered trademarks of Qualcomm Incorporated.</br>
+                        Snapdragon Digital Chassis is a product of Qualcomm Technologies, Inc. and/or its subsidiaries.</br></br></br>
+                    <p/>
+
+                    <center><h5 class="h5 mb-3">Eclipse S-CORE: "Open by Choice. Safe by Design."</h5></center>
+                  </div>
+                </div>
+
+                <div class="main-blog-item-card d-flex flex-column gap-3">
+                  <div class="blog-img d-flex align-items-center justify-content-center"
+                  >
+                    <img src="images/news/EF_PressRelease_on_QNX.PNG" alt="" />
+                  </div>
+                  <div class="blog-item-content">
+                    <div
+                      class="top-pick-date d-flex align-items-center gap-2 mb-2"
+                    >
+                      <span class="icon d-flex align-items-center">
+                        <img src="images/icons/calendar.svg" alt="" />
+                      </span>
+                      <span class="date">Jun 12, 2025</span>
+                    </div>
+                    <h2 class="h2 mb-3">
+                      The Eclipse Foundation Launches the S-CORE Project: The Automotive Industry's First Open Source Core Stack for Software-Defined Vehicles
+                    </h2>
+                    <p>
+                      Source: Eclipse Foundation Canada
+                    </p>
+                    <a
+                      class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
+                      href="https://www.globenewswire.com/news-release/2025/06/12/3098131/0/en/The-Eclipse-Foundation-Launches-the-S-CORE-Project-The-Automotive-Industry-s-First-Open-Source-Core-Stack-for-Software-Defined-Vehicles.html" 
+                      target="_blank" rel="noopener noreferrer"
+                    >
+                      Read More
+                    </a>
+                  </div>
+                </div>
+                <div class="main-blog-item-card d-flex flex-column gap-3">
+                  <div
+                    class="blog-img d-flex align-items-center justify-content-center"
+                  >
+                    <img src="images/news/QNX_PressRelease.PNG" alt="" />
+                  </div>
+                  <div class="blog-item-content">
+                    <div
+                      class="top-pick-date d-flex align-items-center gap-2 mb-2"
+                    >
+                      <span class="icon d-flex align-items-center">
+                        <img src="images/icons/calendar.svg" alt="" />
+                      </span>
+                      <span class="date">18 Jun, 2025</span>
+                    </div>
+                    <h2 class="h2 mb-3">
+                      QNX to Serve as Foundational Operating System for Eclipse Safe Open Vehicle Core (S-CORE) Project
+                    </h2>
+                    <p>
+                      Source: BlackBerry Media Relations
+                    </p>
+                    <a
+                      class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
+                      href="https://feeds.issuerdirect.com/news-release.html?newsid=5917728836963387&symbol=BB,BB:CA"
+                      target="_blank" rel="noopener noreferrer">
+                      Read More
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="text-center mt-3">
+                <a
+                  class="show-more btn btn-primary main-outline-primary mt-4 d-inline-block text-center"
+                  href="#"
+                >
+                  Show More
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-xl-4 mt-xl-0 mt-5">
+              <div class="main-search-top-picks-card d-flex flex-column gap-4">
+               
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer-section">
+        <div class="container">
+          <div class="row justify-content-start mb-3">
+           
+          <div class="row justify-content-start mb-3">
+            <div class="col-12 text-start">
+              <span class="footer-copyright fw-bold text-white"
+                >Copyright © Eclipse Foundation AISBL. All Rights Reserved.</span
+              >
+            </div>
+          </div>
+          <div class="row justify-content-start">
+            <div class="col-12 col-md-auto d-flex justify-content-start gap-3">
+              <a
+                href="https://www.eclipse.org/legal/termsofuse.php"
+                class="footer-policy-link text-white text-decoration-none"
+                >Terms of Use</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/privacy.php"
+                class="footer-policy-link text-white text-decoration-none"
+                >Privacy Policy</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/copyright.php"
+                class="footer-policy-link text-white text-decoration-none"
+                >Copyright Agent</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/epl-2.0/"
+                class="footer-policy-link text-white text-decoration-none"
+                >Eclipse Public License</a
+              >
+              <a
+                href="https://www.eclipse.org/legal/"
+                class="footer-policy-link text-white text-decoration-none"
+                >Legal Resources</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <div id="loading-screen">
+      <img src="images/icons/logo.svg" alt="Logo" class="loading-logo" />
+    </div>

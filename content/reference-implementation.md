@@ -18,123 +18,34 @@ extra_scripts:
   - "js/bootstrap.min.js"
   - "js/campus.js"
   - "js/loading.js"
+use_shared_header: true
+use_shared_footer: true
+active_nav: "join"
+header_class: "campus-page-header"
+header_title: "Join us"
+breadcrumb_html: |
+  
+                  <li class="breadcrumb-item">
+                    <a href="index.html" class="breadcrumb-link text-white"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="breadcrumb-item">
+                    <a
+                      href="training-modules.html"
+                      class="breadcrumb-link text-white"
+                      >Join us</a
+                    >
+                  </li>
+                  <li
+                    class="breadcrumb-item active text-white"
+                    aria-current="page"
+                  >
+                    How to Contribute
+                  </li>
 ---
 
-<header class="main-pages-header campus-page-header w-100">
-      <nav
-        class="navbar navbar-expand-xl navbar-light bg-light frame w-100"
-        style="min-height: 64px"
-      >
-        <div class="container px-3">
-          <div class="navbar-content">
-            <a
-              class="navbar-brand d-flex align-items-center logo"
-              href="index.html"
-            >
-              <div class="logo-icon me-0">
-                <img class="logo-text" src="images/icons/logo.svg" alt="Logo" />
-              </div>
-              <span class="logo-title h1 mb-0 fw-semibold">Eclipse S-CORE</span>
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavDropdown"
-              aria-controls="navbarNavDropdown"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 navigation-links">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="news.html"
-                    >News/Events</a
-                  >
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link active" href="training-modules.html"
-                    >Join us</a
-                  >
-                  <div
-                    class="active-indicator d-none d-lg-block"
-                    aria-hidden="true"
-                  ></div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="faq.html" >FAQ</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://eclipse-score.github.io/score/main/" target="_blank">Docs</a>
-                </li>
-                
-              </ul>
-              <div
-                class="search-form-container d-flex align-items-center gap-2"
-              >
-                
-                <a
-                  href="https://github.com/eclipse-score"
-                  class="github-link ms-2"
-                  aria-label="Visit our GitHub"
-                >
-                  <div class="github-icon" aria-hidden="true">
-                    <img
-                      src="images/icons/github.svg"
-                      alt="GitHub Icon"
-                      class="img-fluid"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <section
-        class="pages-header-content w-100 flex-grow-1 d-flex align-items-end py-5"
-      >
-        <div class="container">
-          <div class="pages-title">
-            <h2 class="h2 text-white">Join us</h2>
-          </div>
-          <div class="bredcrumb-container">
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb mb-0">
-                <li class="breadcrumb-item">
-                  <a href="index.html" class="breadcrumb-link text-white"
-                    >Home</a
-                  >
-                </li>
-                <li class="breadcrumb-item">
-                  <a
-                    href="training-modules.html"
-                    class="breadcrumb-link text-white"
-                    >Join us</a
-                  >
-                </li>
-                <li
-                  class="breadcrumb-item active text-white"
-                  aria-current="page"
-                >
-                  How to Contribute
-                </li>
-              </ol>
-            </nav>
-          </div>
-        </div>
-      </section>
-    </header>
-
-    <main class="main-section p-0 d-flex flex-column">
+<main class="main-section p-0 d-flex flex-column">
       <section class="esc-pages-section nav-tabs-section">
         <div class="container">
           <div class="nav-tabs-wrapper">
@@ -341,50 +252,4 @@ extra_scripts:
           </div>
         </div>
       </section>
-
-      <footer class="footer-section">
-        <div class="container">
-          <div class="row justify-content-start mb-3">
-            
-          <div class="row justify-content-start mb-3">
-            <div class="col-12 text-start">
-              <span class="footer-copyright fw-bold text-white"
-                >Copyright © Eclipse Foundation AISBL. All Rights Reserved.</span
-              >
-            </div>
-          </div>
-          <div class="row justify-content-start">
-            <div class="col-12 col-md-auto d-flex justify-content-start gap-3">
-              <a
-                href="https://www.eclipse.org/legal/termsofuse.php"
-                class="footer-policy-link text-white text-decoration-none"
-                >Terms of Use</a
-              >
-              <a
-                href="https://www.eclipse.org/legal/privacy.php"
-                class="footer-policy-link text-white text-decoration-none"
-                >Privacy Policy</a
-              >
-              <a
-                href="https://www.eclipse.org/legal/copyright.php"
-                class="footer-policy-link text-white text-decoration-none"
-                >Copyright Agent</a
-              >
-              <a
-                href="https://www.eclipse.org/legal/epl-2.0/"
-                class="footer-policy-link text-white text-decoration-none"
-                >Eclipse Public License</a
-              >
-              <a
-                href="https://www.eclipse.org/legal/"
-                class="footer-policy-link text-white text-decoration-none"
-                >Legal Resources</a
-              >
-            </div>
-          </div>
-        </div>
-      </footer>
-    </main>
-    <div id="loading-screen">
-      <img src="images/icons/logo.svg" alt="Logo" class="loading-logo" />
-    </div>
+</main>

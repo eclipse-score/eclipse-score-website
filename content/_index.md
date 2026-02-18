@@ -333,13 +333,13 @@ extra_scripts:
                       </div>
                     </div>
                   </div>
+                  <button class="custom-prev" style="display: none">
+                    <img src="images/icons/chevron-left.svg" alt="" />
+                  </button>
+                  <button class="custom-next" style="display: none">
+                    <img src="images/icons/chevron-right.svg" alt="" />
+                  </button>
                 </div>
-                <button class="custom-prev" style="display: none">
-                  <img src="images/icons/chevron-left.svg" alt="" />
-                </button>
-                <button class="custom-next" style="display: none">
-                  <img src="images/icons/chevron-right.svg" alt="" />
-                </button>                
               </div>
             </div>
           </section>

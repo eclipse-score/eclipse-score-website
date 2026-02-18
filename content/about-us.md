@@ -121,7 +121,7 @@ breadcrumb_html: |
         </div>
       </section>
 
-      <section class="esc-section esc-our-contributors-container-section">
+      <section class="esc-section esc-our-contributors-container-section contributor-nav-dark">
         <div class="container">
           <div class="pages-title">
             <h2 class="h2 text-white fw-bold mb-3">Our Contributors</h2>

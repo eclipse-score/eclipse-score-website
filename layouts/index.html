@@ -1,0 +1,7 @@
+{{ define "main" }}
+{{ if .Params.render_raw }}
+{{ .RawContent | safeHTML }}
+{{ else }}
+{{ .Content }}
+{{ end }}
+{{ end }}

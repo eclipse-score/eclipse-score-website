@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="{{ site.Language.Lang | default "en" }}">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=4, user-scalable=yes" />
+
+    {{ $defaultDescription := .Site.Params.description }}
+    {{ $pageDescription := .Description | default .Params.description | default $defaultDescription }}
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+    <meta name="description" content="{{ $pageDescription }}" />
+
+    <link rel="icon" href="{{ "images/icons/logo.svg" | relURL }}" type="image/x-icon" />
+
+    {{ $styles := slice "css/bootstrap.min.css" "css/loading.css" "css/navbar.css" "css/globals.css" "css/footer.css" "css/styleguide.css" }}
+    {{ with .Params.extra_styles }}
+      {{ range . }}
+        {{ $styles = $styles | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{ range uniq $styles }}
+      <link rel="stylesheet" href="{{ . | relURL }}" />
+    {{ end }}
+
+    {{ with .Params.external_styles }}
+      {{ range . }}
+        <link rel="stylesheet" href="{{ . }}" />
+      {{ end }}
+    {{ end }}
+  </head>
+  <body>
+    {{ block "main" . }}{{ end }}
+
+    {{ $scripts := slice "js/jquery-3.7.1.min.js" "js/bootstrap.min.js" "js/loading.js" }}
+    {{ with .Params.extra_scripts }}
+      {{ range . }}
+        {{ $scripts = $scripts | append . }}
+      {{ end }}
+    {{ end }}
+
+    {{ range uniq $scripts }}
+      <script src="{{ . | relURL }}"></script>
+    {{ end }}
+
+    {{ with .Params.external_scripts }}
+      {{ range . }}
+        <script src="{{ . }}"></script>
+      {{ end }}
+    {{ end }}
+
+    {{ block "scripts" . }}{{ end }}
+  </body>
+</html>

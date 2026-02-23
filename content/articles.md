@@ -67,6 +67,67 @@ breadcrumb_html: |
           <div class="row w-100 g-4">
             <div class="col-12 col-xl-8 gap-3 mt-0">
               <div class="d-flex flex-column gap-3">
+                <!-- ========== START: S-CORE 0.6.0 Release Card (English Version) ========== -->
+<div class="main-blog-item-card d-flex flex-column gap-3">
+  
+  <div class="blog-item-content">
+    <div class="top-pick-date d-flex align-items-center gap-2 mb-2">
+      <span class="icon d-flex align-items-center">
+        <img src="images/icons/calendar.svg" alt="Calendar Icon" />
+      </span>
+      <!-- Adjust the date to the actual release date -->
+      <span class="date">Feb 23, 2026</span>
+    </div>
+    <h2 class="h2 mb-3">
+      Eclipse S-CORE v0.6.0 Milestone Released!
+    </h2>
+    
+    <!-- IMPORTANT: The markdown="1" attribute ensures the content is rendered correctly -->
+    <div class="card-text mb-4" markdown="1">
+
+<p>We're excited to announce the third milestone release of Eclipse S-CORE (v0.6.0), the open-source automotive middleware platform developed within the Eclipse SDV Working Group!</p>
+
+<h4 class="mt-4 mb-2">What's New in v0.6.0:</h4>
+
+<ul>
+  <li>
+    <strong>Dual-Language Platform:</strong> S-CORE now offers equal support for C++ and Rust, with 5 modules featuring Rust APIs and integration of the Ferrocene safety-critical Rust toolchain.
+  </li>
+  <li>
+    <strong>Platform Expansion:</strong> Two major new modules added:
+    <ul>
+      <li><strong>Baselibs Rust:</strong> Foundation utilities for Rust development.</li>
+      <li><strong>Lifecycle &amp; Health Management:</strong> Launch Manager and Health Monitoring for robust process supervision.</li>
+    </ul>
+  </li>
+  <li>
+    <strong>Enhanced Capabilities:</strong> Rust backends for Persistency, Communication, and Logging, an interactive example menu, and full CI/CD automation with a unified Bazel module.
+  </li>
+  <li>
+    <strong>Matured Infrastructure:</strong> A comprehensive S-CORE Handbook, enhanced ISO 26262/21434 &amp; ASPICE 4.0 process compliance, and updates for QNX, Red Hat AutoSD, and more.
+  </li>
+</ul>
+
+<h4 class="mt-4 mb-2">Get Involved:</h4>
+
+<ul>
+    <li>Explore the release: <a href="https://eclipse-score.github.io/score/main/score_releases/score_releases/index.html" target="_blank">Release Notes</a></li>
+    <li>Read the S-CORE Handbook: <a href="https://eclipse-score.github.io/score/main/handbook/" target="_blank">S-CORE Handbook</a></li>
+    <li>Join the conversation: <a href="https://github.com/orgs/eclipse-score/discussions">Discussions on GitHub</a></li>
+    <li>Contribute: <a href="https://github.com/eclipse-score" target="_blank">GitHub Repo</a></li>
+</ul>
+
+<p class="mt-3">A huge thank you to our contributors and the Eclipse SDV community for making this milestone possible!</p>
+
+    </div>
+
+    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://eclipse-score.github.io/score/main/score_releases/score_releases/score_v0_6.html" target="_blank">
+      Full release notes
+    </a>
+  </div>
+</div>
+<!-- ========== END: S-CORE 0.6.0 Release Card (English Version) ========== -->
+
                 <div class="main-blog-item-card d-flex flex-column gap-3">
                   <div
                     class="blog-img d-flex align-items-center justify-content-center"

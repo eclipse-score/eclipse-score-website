@@ -169,7 +169,7 @@ extra_scripts:
           <section class="esc-section esc-nutshell-section">
             <div class="container">
               <div class="esc-header esc-header-nutshell mb-5">
-                <h2 class="h2">Latest News: <br/> S-CORE Release v0.5 - beta is available</h2>
+                <h2 class="h2">Latest News: <br/> 23.02.2026 - S-CORE Release v0.6.0 is available</h2>
               </div>
 
               <div class="row g-4 justify-content-center">
@@ -189,7 +189,7 @@ extra_scripts:
 
                       <a
                         class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
-                        href="https://eclipse-score.github.io/score/main/score_releases/score_releases/score_v0_5_beta.html" target="_blank" rel="noopener noreferrer"
+                        href="https://eclipse-score.github.io/score/main/score_releases/score_releases/score_v0_6.html" target="_blank" rel="noopener noreferrer"
                       >
                         Release Notes
                       </a>
@@ -270,7 +270,29 @@ extra_scripts:
               <div class="esc-content">
                 <div class="owl-carousel-wrapper position-relative">
                   <div class="owl-carousel news-slider">
-
+                  <!-- ========== Begin Card ========== -->
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="images/home/2026-02-23_s-corev060_milestone_architecture.jpg" alt="" />
+                      </div>
+                      <div class="card-body p-0 py-4">
+                        <h4 class="title mb-2">Eclipse S-CORE v0.6.0 Released</h4>
+                        <p class="desc">
+                          We're excited to announce the third milestone release of Eclipse S-CORE (v0.6.0), the open-source automotive middleware platform developed within the Eclipse SDV Working Group!
+                        </p>
+                        <h4 class="title mb-2">Eclipse S-CORE: <br>
+                          Open by Choice. Safe by Design.</h4>
+                      </div>
+                      <div class="card-actions">
+                        <a class="learn-more" href="articles.html" and rel="noopener noreferrer"
+                          >Learn More
+                          <div class="icon">
+                            <img src="images/icons/right-arrow.svg" alt="" />
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <!-- ========== End Card ========== -->
                     <div class="card">
                       <div class="card-img">
                         <img src="images/home/S_CORE_0_5.png" alt="" />

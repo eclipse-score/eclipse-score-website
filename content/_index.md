@@ -189,7 +189,7 @@ extra_scripts:
 
                       <a
                         class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
-                        href="https://eclipse-score.github.io/score/main/score_releases/score_releases/score_v0_6.html" target="_blank" rel="noopener noreferrer"
+                        href="https://eclipse-score.github.io/reference_integration/v0.6.0/_collections/score_platform/docs/score_releases/score_releases/score_v0_6.html#doc__score_v06_release_note" target="_blank" rel="noopener noreferrer"
                       >
                         Release Notes
                       </a>
@@ -215,7 +215,7 @@ extra_scripts:
 
                       <a
                         class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
-                        href="https://eclipse-score.github.io/score/main/handbook/index.html" target="_blank" rel="noopener noreferrer"
+                        href="https://eclipse-score.github.io/reference_integration/v0.6.0/_collections/score_platform/docs/handbook/index.html" target="_blank" rel="noopener noreferrer"
                       >
                         How to get started
                       </a>

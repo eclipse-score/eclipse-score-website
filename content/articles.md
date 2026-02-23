@@ -111,8 +111,8 @@ breadcrumb_html: |
 <h4 class="mt-4 mb-2">Get Involved:</h4>
 
 <ul>
-    <li>Explore the release: <a href="https://eclipse-score.github.io/score/main/score_releases/score_releases/index.html" target="_blank">Release Notes</a></li>
-    <li>Read the S-CORE Handbook: <a href="https://eclipse-score.github.io/score/main/handbook/" target="_blank">S-CORE Handbook</a></li>
+    <li>Explore the release: <a href="https://eclipse-score.github.io/reference_integration/v0.6.0/_collections/score_platform/docs/score_releases/index.html" target="_blank">Release Notes</a></li>
+    <li>Read the S-CORE Handbook: <a href="https://eclipse-score.github.io/reference_integration/v0.6.0/_collections/score_platform/docs/handbook/index.html" target="_blank">S-CORE Handbook</a></li>
     <li>Join the conversation: <a href="https://github.com/orgs/eclipse-score/discussions">Discussions on GitHub</a></li>
     <li>Contribute: <a href="https://github.com/eclipse-score" target="_blank">GitHub Repo</a></li>
 </ul>
@@ -121,7 +121,9 @@ breadcrumb_html: |
 
     </div>
 
-    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://eclipse-score.github.io/score/main/score_releases/score_releases/score_v0_6.html" target="_blank">
+    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://eclipse-score.github.io/reference_integration/v0.6.0/index.html
+    
+    main/score_releases/score_releases/score_v0_6.html" target="_blank">
       Full release notes
     </a>
   </div>

@@ -121,9 +121,7 @@ breadcrumb_html: |
 
     </div>
 
-    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://eclipse-score.github.io/reference_integration/v0.6.0/index.html
-    
-    main/score_releases/score_releases/score_v0_6.html" target="_blank">
+    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://eclipse-score.github.io/reference_integration/v0.6.0/index.html" target="_blank">
       Full release notes
     </a>
   </div>

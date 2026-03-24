@@ -67,6 +67,80 @@ breadcrumb_html: |
           <div class="row w-100 g-4">
             <div class="col-12 col-xl-8 gap-3 mt-0">
               <div class="d-flex flex-column gap-3">
+
+<!-- ========== START: Call for Contributions (English Version) ========== -->
+<div class="main-blog-item-card d-flex flex-column gap-3">
+  
+  <div class="blog-item-content">
+    <div class="top-pick-date d-flex align-items-center gap-2 mb-2">
+      <span class="icon d-flex align-items-center">
+        <img src="images/icons/calendar.svg" alt="Calendar Icon" />
+      </span>
+      <!-- Adjust the date to the actual publication date of the call -->
+      <span class="date">March 23, 2026</span> 
+    </div>
+    <h2 class="h2 mb-3">
+      Shape the Future: Call for S-CORE Contributors & Maintainers!
+    </h2>
+    
+    <!-- IMPORTANT: The markdown="1" attribute ensures the content is rendered correctly -->
+    <div class="card-text mb-4" markdown="1">
+
+<p>Eclipse S-CORE is actively seeking passionate contributors and dedicated maintainers to join us in shaping the core building blocks of the software-defined vehicle stack. This is a unique opportunity to actively influence, build, and maintain an open, consistent software foundation for the automotive industry's future.</p>
+</br>
+<p>We are specifically looking to expand our expertise and manpower in the following critical areas:</p>
+
+<ul>
+  <li>
+    <strong>Generative AI (GenAI):</strong> Help us define and integrate intelligent solutions into the S-CORE ecosystem.
+    <br><a href="https://github.com/eclipse-score/score/issues/1767?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="_blank" class="text-link">Learn more about GenAI opportunities</a>
+  </li>
+  <li>
+    <strong>AI Platform / Inference Engine:</strong> Drive the development of robust, automotive-grade AI execution capabilities within S-CORE.
+    <br><a href="https://github.com/eclipse-score/score/issues/1768?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="_blank">Explore AI Platform / Inference Engine roles</a>
+  </li>
+  <li>
+    <strong>Security &amp; Cryptography:</strong> Strengthen the security posture of S-CORE, ensuring trust and integrity for safety-critical applications.
+    <br><a href="https://github.com/eclipse-score/score/issues/2054?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="_blank">Discover Security &amp; Cryptography challenges</a>
+  </li>
+</ul></br>
+
+<p><strong>What We Are Looking For:</strong></p>
+
+<ul>
+  <li>Innovative implementation concepts.</li>
+  <li>Proposals for integrating existing open-source components.</li>
+  <li>New module proposals that align with S-CORE's strategic objectives.</li>
+</ul></br>
+
+<p><strong>How To Contribute:</strong></p>
+
+<p>Ready to make an impact? Submit your detailed proposal via our defined process:</p>
+<ul>
+    <li><a href="https://github.com/eclipse-score/score/issues/1571?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226#issue-3289568769" target="_blank">Submit Your Proposal Here</a></li>
+</ul>
+</br>
+<p><strong>What Happens Next:</strong></p>
+
+<p>Selected contributions will be presented and discussed in the upcoming **Architecture Community Workshop in April 2026**. This workshop will be held either face-to-face or online, decision to be announced soon.</p></br>
+
+<p><strong>Important Dates:</strong></p>
+<ul>
+  <li><strong>Submission Deadline:</strong> April 4, 2026</li>
+  <li><strong>Workshop Format Decision:</strong> April 6, 2026</li>
+</ul>
+
+<p class="mt-3">Join us in building the open, consistent software stack for the next generation of vehicles!</p>
+
+    </div>
+
+    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://github.com/eclipse-score" target="_blank">
+      Visit S-CORE on GitHub
+    </a>
+  </div>
+</div>
+<!-- ========== END: Call for Contributions ========== -->
+
                 <!-- ========== START: S-CORE 0.6.0 Release Card (English Version) ========== -->
 <div class="main-blog-item-card d-flex flex-column gap-3">
   
@@ -85,7 +159,7 @@ breadcrumb_html: |
     <!-- IMPORTANT: The markdown="1" attribute ensures the content is rendered correctly -->
     <div class="card-text mb-4" markdown="1">
 
-<p>We're excited to announce the third milestone release of Eclipse S-CORE (v0.6.0), the open-source automotive middleware platform developed within the Eclipse SDV Working Group!</p>
+<p>Revoked: The milestone release was revoked due to incompatibility of some modules.</p>
 
 <h4 class="mt-4 mb-2">What's New in v0.6.0:</h4>
 

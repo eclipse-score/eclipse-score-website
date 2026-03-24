@@ -72,12 +72,10 @@ breadcrumb_html: |
                 <div class="main-blog-item-card d-flex flex-column gap-3">
                     <h5 class="h5 fw-semibold mb-3">Upcoming Conferences</h5>
 
-
- 
+                  <!-- NEUER UPCOMING EVENT: Open Chain and Friends in Stuttgart -->
                   <div class="main-blog-item-card d-flex flex-column gap-3">
-
                     <div class="blog-img d-flex align-items-center justify-content-center">
-                      <img src="images/news/SIA_logo.png" alt="" />
+                      <img src="images/news/2026_openchain_and_friends.png" alt="Open Chain and Friends" />
                     </div>
 
                     <div class="blog-item-content">
@@ -87,28 +85,26 @@ breadcrumb_html: |
                         <span class="icon d-flex align-items-center">
                           <img src="images/icons/calendar.svg" alt="" />
                         </span>
-                        <span class="date">5 Feb, 2026</span>
+                        <span class="date">24-26 Mar, 2026</span>
                       </div>
                       <h2 class="h2 mb-3">
-                        SIA 2026 | Future Proofing SDV Study Day, <br> Paris, France
+                        Open Chain and Friends, <br> Stuttgart, Germany
                       </h2>
                       <p>
-                        Presenter: Björn Reistel (ETAS) <br>
-                        Topic: S-CORE | Background, Status and Insights to S-CORE 0.5 "Certifiable"
+                        Presenter: Björn Reistel <br>
+                        Topic: Eclipse S-CORE: Open by Choice, Safe by Design.
                       </p>
                       <a
                         class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
-                        href="https://www.sia.fr/evenements/404-study-day-future-proofing-sdv"
+                        href="https://openchainproject.org/news/2025/12/09/openchain-and-friends-2026"
                       >
                         Read More
                       </a>
                     </div>
                   </div>
-                    
 
- 
+                  <!-- BESTEHENDER UPCOMING EVENT: OCX 2026 -->
                   <div class="main-blog-item-card d-flex flex-column gap-3">
-
                     <div class="blog-img d-flex align-items-center justify-content-center">
                       <img src="images/news/OCX26.png" alt="" />
                     </div>
@@ -123,10 +119,10 @@ breadcrumb_html: |
                         <span class="date">21-23 Apr, 2026</span>
                       </div>
                       <h2 class="h2 mb-3">
-                        OCX 2026 | Open Community Exceprience, <br> Brussels, Belgium
+                        OCX 2026 | Open Community Experience, <br> Brussels, Belgium
                       </h2>
                       <p>
-                        Presenter: tbd. <br>
+                        Presenter: Björn Reistel <br>
                         Topic: S-CORE | Background, Status and Insights to S-CORE 0.5 "Certifiable"
                       </p>
                       <a
@@ -138,12 +134,7 @@ breadcrumb_html: |
                     </div>
                   </div>
                      
-            </div>
-
-
-
-                
-                
+                </div> <!-- /main-blog-item-card for Upcoming Conferences -->
 
               </div>
               <div class="text-center mt-3">
@@ -158,39 +149,84 @@ breadcrumb_html: |
             <div class="col-12 col-xl-4 mt-xl-0 mt-5">
               <div class="main-search-top-picks-card d-flex flex-column gap-4">
                
-
                 <div class="top-picks-container">
                   <h5 class="h5 fw-semibold mb-3">Previous Conferences</h5>
 
-
-
                   <aside class="top-picks-our-blogs">
-                      <a href="https://www.eventbrite.com/e/eclipse-sdv-community-meetup-japan-co-hosted-by-bosch-group-tickets-1540218427779"
-                      class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
-                      <div class="top-pick-img">
-                        <img src="images/news/EclipseMeetupJapan.jfif" alt="Top Picks" />
-                      </div>                     
-                      <div class="top-pick-content">
-                        <div
-                          class="top-pick-date d-flex align-items-center gap-2 mb-2"
-                        >
-                          <span class="icon d-flex align-items-center">
-                            <img src="images/icons/calendar.svg" alt="" />
-                          </span>
-                          <span class="date">11 Dec, 2025</span>
-                        </div>
-                        <h3>Eclipse SDV Community Meetup, <br>
-                          Japan/ Yokohama (BOSCH)</h3>
-                        <p class="text-muted">
-                          Presenter: Sven Kappel (ETAS) <br>
-                          Topic: "S-CORE, a holistic approach for automotive towards open source."
-                        </p>
+
+                    <!-- NEUER PREVIOUS EVENT: SDV Community Days at T-Systems -->
+                    <a href="https://www.eclipse-foundation.events/event/SDV-Community-Days-2026/home"
+                    class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
+                    <div class="top-pick-img">
+                      <img src="images/news/2026_community_day_bonn.png" alt="SDV Community Days" />
+                    </div>                     
+                    <div class="top-pick-content">
+                      <div
+                        class="top-pick-date d-flex align-items-center gap-2 mb-2"
+                      >
+                        <span class="icon d-flex align-items-center">
+                          <img src="images/icons/calendar.svg" alt="" />
+                        </span>
+                        <span class="date">24 Feb, 2026</span>
                       </div>
-                    </a>  
+                      <h3>SDV Community Days at T-Systems, <br>
+                        Bonn, Germany</h3>
+                      <p class="text-muted">
+                        Presenter: Philipp Ahmann, Björn Reistel <br>
+                        Topic: "Eclipse Safe Open Vehicle Core: Introduction to latest Eclipse S-CORE Release, Current Momentum, and Outlook 2026."
+                      </p>
+                    </div>
+                  </a>  
 
+                    <!-- VERSCHOBENER EVENT: SIA 2026 -->
+                    <a href="https://www.sia.fr/evenements/404-study-day-future-proofing-sdv"
+                    class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
+                    <div class="top-pick-img">
+                      <img src="images/news/SIA_logo.png" alt="SIA 2026" />
+                    </div>                     
+                    <div class="top-pick-content">
+                      <div
+                        class="top-pick-date d-flex align-items-center gap-2 mb-2"
+                      >
+                        <span class="icon d-flex align-items-center">
+                          <img src="images/icons/calendar.svg" alt="" />
+                        </span>
+                        <span class="date">5 Feb, 2026</span>
+                      </div>
+                      <h3>SIA 2026 | Future Proofing SDV Study Day, <br>
+                        Paris, France</h3>
+                      <p class="text-muted">
+                        Presenter: Björn Reistel (ETAS) <br>
+                        Topic: S-CORE | Background, Status and Insights to S-CORE 0.5 "Certifiable"
+                      </p>
+                    </div>
+                  </a>
 
-                  <aside class="top-picks-our-blogs">
-                      <a href="https://www.eventbrite.com/e/eclipse-sdv-south-korea-lg-tickets-1742261403759"
+                    <!-- BESTEHENDE EVENTS (unverändert) -->
+                    <a href="https://www.eventbrite.com/e/eclipse-sdv-community-meetup-japan-co-hosted-by-bosch-group-tickets-1540218427779"
+                    class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
+                    <div class="top-pick-img">
+                      <img src="images/news/EclipseMeetupJapan.jfif" alt="Top Picks" />
+                    </div>                     
+                    <div class="top-pick-content">
+                      <div
+                        class="top-pick-date d-flex align-items-center gap-2 mb-2"
+                      >
+                        <span class="icon d-flex align-items-center">
+                          <img src="images/icons/calendar.svg" alt="" />
+                        </span>
+                        <span class="date">11 Dec, 2025</span>
+                      </div>
+                      <h3>Eclipse SDV Community Meetup, <br>
+                        Japan/ Yokohama (BOSCH)</h3>
+                      <p class="text-muted">
+                        Presenter: Sven Kappel (ETAS) <br>
+                        Topic: "S-CORE, a holistic approach for automotive towards open source."
+                      </p>
+                    </div>
+                  </a>  
+
+                  <a href="https://www.eventbrite.com/e/eclipse-sdv-south-korea-lg-tickets-1742261403759"
                       class="top-pick-item d-flex align-items-start gap-3" target="_blank" rel="noopener noreferrer">
                       <div class="top-pick-img">
                         <img src="images/news/EF_MeetUp_KR.PNG" alt="Top Picks" />

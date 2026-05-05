@@ -19,6 +19,7 @@ extra_scripts:
   - "js/zoom.js"
   - "js/about-us.js"
   - "js/contributor-slider.js"
+  - "js/member-logos.js"
   - "js/loading.js"
 use_shared_header: true
 use_shared_footer: true

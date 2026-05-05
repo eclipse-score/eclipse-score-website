@@ -20,6 +20,7 @@ extra_scripts:
   - "js/zoom.js"
   - "js/news.js"
   - "js/contributor-slider.js"
+  - "js/member-logos.js"
   - "js/loading.js"
 ---
 <main class="main-section homepage-main-section p-0 min-vh-100 d-flex flex-column">

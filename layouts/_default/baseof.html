@@ -49,5 +49,9 @@
     {{ end }}
 
     {{ block "scripts" . }}{{ end }}
+
+    {{ if in .Params.extra_scripts "js/member-logos.js" }}
+      {{ partial "eclipse-orgs-data.html" . }}
+    {{ end }}
   </body>
 </html>

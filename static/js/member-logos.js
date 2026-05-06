@@ -9,13 +9,13 @@
  * API call fails or returns no usable data.
  *
  * API reference:
- *   https://api.eclipse.org/projects/automotive.score/organizations
+ *   https://membership.eclipse.org/api/projects/automotive.score/organizations
  */
 (function ($) {
   "use strict";
 
   var ECLIPSE_API_URL =
-    "https://api.eclipse.org/projects/automotive.score/organizations";
+    "https://membership.eclipse.org/api/projects/automotive.score/organizations";
 
   /** Milliseconds before giving up on the API request. */
   var API_TIMEOUT = 10000;
@@ -69,14 +69,17 @@
 
   /**
    * Derive a logo URL from an organization object returned by the API.
-   * The API may supply the URL directly (`logo` field) or we can construct
-   * it from the numeric membership `id` using the Eclipse Foundation's
-   * standard logo path.
+   * The API may supply the URL directly in several fields:
+   * - logos.web (new API format)
+   * - logo (old API format)
+   * Or we can construct it from the numeric membership `id` using the
+   * Eclipse Foundation's standard logo path.
    *
    * @param {Object} org
    * @returns {string|null}
    */
   function getLogoUrl(org) {
+    if (org.logos && org.logos.web) return org.logos.web;
     if (org.logo) return org.logo;
     var id = parseInt(org.id, 10);
     if (!isNaN(id)) {
@@ -93,7 +96,7 @@
    * @returns {string|null}
    */
   function getOrgUrl(org) {
-    return org.website_url || org.url || org.homepage_url || null;
+    return org.website || org.website_url || org.url || org.homepage_url || null;
   }
 
   /**
@@ -191,67 +194,49 @@
   }
 
   /**
-   * Render organizations into every `.contributor-slider` on the page.
-   *
-   * @param {*} data - raw parsed JSON returned by the API (or the inlined value
-   *                   of window.__eclipseOrgs__)
+   * Entry point – fetches organizations from the Eclipse Foundation API and,
+   * on success, rebuilds every `.contributor-slider` on the page with the
+   * retrieved logos.  On failure the page retains whatever static logos were
+   * already rendered in the HTML.
    */
-  function renderOrgs(data) {
+  $(function () {
     var $carousels = $(".contributor-slider");
     if (!$carousels.length) return;
 
-    var orgs = extractOrgs(data).filter(function (org) {
-      return org && (org.logo || !isNaN(parseInt(org.id, 10)));
-    });
-
-    if (!orgs.length) return;
-
-    var html = "";
-    orgs.forEach(function (org) {
-      var logoUrl = getLogoUrl(org);
-      if (!logoUrl) return;
-      html += buildCard(logoUrl, org.name || "", getOrgUrl(org));
-    });
-
-    if (!html) return;
-
-    $carousels.each(function () {
-      rebuildCarousel($(this), html);
-    });
-
-    // Use a namespaced event and unbind first so multiple successful calls
-    // (e.g. during hot-reload in development) never stack up listeners.
-    $(window)
-      .off("resize.memberLogos")
-      .on("resize.memberLogos", function () {
-        $carousels.each(function () {
-          updateNavVisibility($(this));
-        });
-      });
-  }
-
-  /**
-   * Entry point – uses organization data embedded at build time by Hugo
-   * (window.__eclipseOrgs__) when available, avoiding a browser-side
-   * cross-origin request.  Falls back to a direct API call when the build-time
-   * data is absent, and silently retains the static logos on any failure.
-   */
-  $(function () {
-    if (!$(".contributor-slider").length) return;
-
-    // Prefer the data embedded at build time (no CORS issue).
-    if (window.__eclipseOrgs__) {
-      renderOrgs(window.__eclipseOrgs__);
-      return;
-    }
-
-    // Fallback: fetch directly from the API (works in environments where the
-    // Eclipse Foundation API allows the request origin via CORS).
     $.ajax({
       url: ECLIPSE_API_URL,
       dataType: "json",
       timeout: API_TIMEOUT,
-      success: renderOrgs,
+      success: function (data) {
+        var orgs = extractOrgs(data).filter(function (org) {
+          return org && (org.logos && org.logos.web) || org.logo || !isNaN(parseInt(org.id, 10));
+        });
+
+        if (!orgs.length) return;
+
+        var html = "";
+        orgs.forEach(function (org) {
+          var logoUrl = getLogoUrl(org);
+          if (!logoUrl) return;
+          html += buildCard(logoUrl, org.name || "", getOrgUrl(org));
+        });
+
+        if (!html) return;
+
+        $carousels.each(function () {
+          rebuildCarousel($(this), html);
+        });
+
+        // Use a namespaced event and unbind first so multiple successful calls
+        // (e.g. during hot-reload in development) never stack up listeners.
+        $(window)
+          .off("resize.memberLogos")
+          .on("resize.memberLogos", function () {
+            $carousels.each(function () {
+              updateNavVisibility($(this));
+            });
+          });
+      },
       // On error: fall back silently to static logos already on the page.
     });
   });

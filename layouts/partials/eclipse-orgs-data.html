@@ -8,10 +8,21 @@
   If the remote fetch fails (network error, non-2xx status), this partial emits
   nothing and member-logos.js falls back to the static logos already in the HTML.
 */}}
-{{- $url := "https://api.eclipse.org/projects/automotive.score/organizations" -}}
-{{- with resources.GetRemote $url -}}
-  {{- if not .Err -}}
-    {{- $data := . | transform.Unmarshal -}}
-    <script>window.__eclipseOrgs__ = {{ $data | jsonify | safeJS }};</script>
+{{- $url := "https://membership.eclipse.org/api/projects/automotive.score/organizations" -}}
+{{- $remote := try (resources.GetRemote $url) -}}
+{{- with $remote -}}
+  {{- with .Err -}}
+    {{- /* On fetch failure, emit nothing. */ -}}
+  {{- else -}}
+    {{- with .Value -}}
+      {{- $parsed := try (transform.Unmarshal .) -}}
+      {{- with $parsed -}}
+        {{- with .Err -}}
+          {{- /* On parse failure, emit nothing. */ -}}
+        {{- else -}}
+          <script>window.__eclipseOrgs__ = {{ .Value | jsonify | safeJS }};</script>
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
   {{- end -}}
 {{- end -}}

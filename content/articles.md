@@ -57,6 +57,11 @@ breadcrumb_html: |
           <div class="row w-100 g-4">
             <div class="col-12 col-xl-8 gap-3 mt-0">
               <div class="d-flex flex-column gap-3">
+              <efsc-collection pagesize="2" autoscroll="true">
+                  <efsc-event-filters></efsc-event-filters>
+                  <efsc-event-list publishtarget="sdv"></efsc-event-list>
+                  <efsc-pagination maxvisible="5" justify="center"></efsc-pagination>
+                </efsc-collection>
 <!-- ========== START: S-CORE 0.7.0 Release Card (English Version) ========== -->
 <div class="main-blog-item-card d-flex flex-column gap-3">
   <div class="blog-item-content">

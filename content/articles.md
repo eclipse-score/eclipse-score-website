@@ -19,25 +19,16 @@ active_nav: "news"
 header_class: "news-page-header"
 header_title: "News & Events"
 breadcrumb_html: |
-  
-                  <li class="breadcrumb-item">
-                    <a href="index.html" class="breadcrumb-link text-white"
-                      >Home</a
-                    >
-                  </li>
-                  <li class="breadcrumb-item">
-                    <a href="news.html" class="breadcrumb-link text-white"
-                      >News &amp; Events</a
-                    >
-                  </li>
-                  <li
-                    class="breadcrumb-item active text-white"
-                    aria-current="page"
-                  >
-                    Articles
-                  </li>
+  <li class="breadcrumb-item">
+    <a href="index.html" class="breadcrumb-link text-white">Home</a>
+  </li>
+  <li class="breadcrumb-item">
+    <a href="news.html" class="breadcrumb-link text-white">News &amp; Events</a>
+  </li>
+  <li class="breadcrumb-item active text-white" aria-current="page">
+    Articles
+  </li>
 ---
-
 <main class="main-section p-0 min-vh-100 d-flex flex-column">
       <section class="esc-pages-section nav-tabs-section">
         <div class="container">
@@ -59,7 +50,6 @@ breadcrumb_html: |
           </div>
         </div>
       </section>
-
       <section
         class="esc-section esc-news-container-section pt-0 min-vh-100 mt-4"
       >
@@ -67,7 +57,50 @@ breadcrumb_html: |
           <div class="row w-100 g-4">
             <div class="col-12 col-xl-8 gap-3 mt-0">
               <div class="d-flex flex-column gap-3">
-
+<!-- ========== START: S-CORE 0.7.0 Release Card (English Version) ========== -->
+<div class="main-blog-item-card d-flex flex-column gap-3">
+  <div class="blog-item-content">
+    <div class="top-pick-date d-flex align-items-center gap-2 mb-2">
+      <span class="icon d-flex align-items-center">
+        <img src="images/icons/calendar.svg" alt="Calendar Icon" />
+      </span>
+      <span class="date">May 12, 2026</span>
+    </div>
+    <h2 class="h2 mb-3">
+      Eclipse S-CORE 0.7 is here!
+    </h2>
+    <div class="card-text mb-4" markdown="1">
+<p>The Eclipse Safe Open Vehicle Core (S-CORE) community is happy to announce the release of version 0.7.0. This significant update introduces a host of new features, enhancements, and stability improvements, reinforcing our commitment to providing an open and safe platform for the next generation of vehicle software.</p>
+<p>With our "Open by Choice - Safe by Design" philosophy, we are paving the way for a new era of collaborative development in the automotive sector. The 0.7 release marks a major milestone in our journey.</p>
+<h4 class="mt-4 mb-2"><b>What's New in 0.7?</b></h4>
+<p>While earlier releases focused on establishing the foundational architecture and introducing core capabilities, release 0.7 represents a significant step forward in the maturity of the platform. This version is centered on refinement and stabilization. We have concentrated on hardening the existing feature set, improving performance across the board, and enhancing the overall developer experience. This makes S-CORE not just more powerful, but also more robust and easier to adopt for complex automotive projects.</p>
+<p>Here are some of the highlights from this release:</p>
+<h4 class="mt-4 mb-2"><b>Core Platform Enhancements</b></h4>
+<ul>
+  <li><b>Baselibs (v0.2.7):</b> Our foundational libraries have been updated for better performance and stability, ensuring a rock-solid base for your applications.</li>
+  <li><b>Communication (v0.2.1):</b> We've improved our communication stack, making it easier to build robust and efficient inter-process communication.</li>
+  <li><b>Persistency (v0.3.2):</b> This release introduces enhancements to our persistency module, allowing for more reliable and flexible data storage solutions.</li>
+  <li><b>Logging (v0.2.0):</b> Our logging framework has been updated to provide more structured and insightful diagnostics, making it easier to debug and monitor your systems.</li>
+  <li><b>Orchestrator (v0.1.1):</b> The orchestrator has been refined to offer more precise control over service management and deployment.</li>
+  <li><b>Kyron (v0.1.2):</b> Our time synchronization module, Kyron, has been updated for greater accuracy, a critical feature for distributed automotive systems.</li>
+  <li><b>Lifecycle & Health Management (v0.2.0):</b> We've enhanced our lifecycle and health management capabilities, providing more robust mechanisms for monitoring and managing the state of your applications.</li>
+</ul>
+<h4 class="mt-4 mb-2"><b>Developer Experience and Tooling</b></h4>
+<ul>
+  <li><b>Reference Integration (v0.7):</b> The reference integration has been updated to bring all the new features and improvements together in a single, coherent package.</li>
+  <li><b>Process Description (v1.5.4):</b> We've improved our process description models, allowing for a more precise and expressive definition of system behavior.</li>
+  <li><b>Docs-as-Code (v4.0.3):</b> Our documentation-as-code toolchain has been upgraded, making it easier to create and maintain high-quality documentation.</li>
+  <li><b>Tooling (v1.1.2):</b> We've made several improvements to our development tools to streamline your workflow.</li>
+  <li><b>ITF (Integration Testing Framework) (v0.3.0) & Test Scenarios (v0.4.1):</b> Our testing frameworks have been enhanced to provide more comprehensive and efficient testing capabilities.</li>
+  <li><b>Bazel CPP Toolchain (v0.5.1):</b> The Bazel C++ toolchain has been updated to support the latest features and provide a more seamless build experience.</li>
+</ul>
+    </div>
+    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://github.com/eclipse-score/reference_integration/releases/tag/v0.7.0" target="_blank">
+      Get Started with Eclipse S-CORE 0.7
+    </a>
+  </div>
+</div>
+<!-- ========== END: S-CORE 0.7.0 Release Card (English Version) ========== -->
 <!-- ========== START: Call for Contributions (English Version) ========== -->
 <div class="main-blog-item-card d-flex flex-column gap-3">
   
@@ -85,62 +118,50 @@ breadcrumb_html: |
     
     <!-- IMPORTANT: The markdown="1" attribute ensures the content is rendered correctly -->
     <div class="card-text mb-4" markdown="1">
-
 <p>Eclipse S-CORE is actively seeking passionate contributors and dedicated maintainers to join us in shaping the core building blocks of the software-defined vehicle stack. This is a unique opportunity to actively influence, build, and maintain an open, consistent software foundation for the automotive industry's future.</p>
 </br>
 <p>We are specifically looking to expand our expertise and manpower in the following critical areas:</p>
-
 <ul>
   <li>
     <strong>Generative AI (GenAI):</strong> Help us define and integrate intelligent solutions into the S-CORE ecosystem.
-    <br><a href="https://github.com/eclipse-score/score/issues/1767?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="_blank" class="text-link">Learn more about GenAI opportunities</a>
+    <br><a href="https://github.com/eclipse-score/score/issues/1767?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="\_blank" class="text-link">Learn more about GenAI opportunities</a>
   </li>
   <li>
     <strong>AI Platform / Inference Engine:</strong> Drive the development of robust, automotive-grade AI execution capabilities within S-CORE.
-    <br><a href="https://github.com/eclipse-score/score/issues/1768?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="_blank">Explore AI Platform / Inference Engine roles</a>
+    <br><a href="https://github.com/eclipse-score/score/issues/1768?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="\_blank">Explore AI Platform / Inference Engine roles</a>
   </li>
   <li>
     <strong>Security &amp; Cryptography:</strong> Strengthen the security posture of S-CORE, ensuring trust and integrity for safety-critical applications.
-    <br><a href="https://github.com/eclipse-score/score/issues/2054?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="_blank">Discover Security &amp; Cryptography challenges</a>
+    <br><a href="https://github.com/eclipse-score/score/issues/2054?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="\_blank">Discover Security &amp; Cryptography challenges</a>
   </li>
 </ul></br>
-
 <p><strong>What We Are Looking For:</strong></p>
-
 <ul>
   <li>Innovative implementation concepts.</li>
   <li>Proposals for integrating existing open-source components.</li>
   <li>New module proposals that align with S-CORE's strategic objectives.</li>
 </ul></br>
-
 <p><strong>How To Contribute:</strong></p>
-
 <p>Ready to make an impact? Submit your detailed proposal via our defined process:</p>
 <ul>
-    <li><a href="https://github.com/eclipse-score/score/issues/1571?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226#issue-3289568769" target="_blank">Submit Your Proposal Here</a></li>
+    <li><a href="https://github.com/eclipse-score/score/issues/1571?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226#issue-3289568769" target="\_blank">Submit Your Proposal Here</a></li>
 </ul>
 </br>
 <p><strong>What Happens Next:</strong></p>
-
-<p>Selected contributions will be presented and discussed in the upcoming **Architecture Community Workshop in April 2026**. This workshop will be held either face-to-face or online, decision to be announced soon.</p></br>
-
+<p>Selected contributions will be presented and discussed in the upcoming \*\*Architecture Community Workshop in April 2026\*\*. This workshop will be held either face-to-face or online, decision to be announced soon.</p></br>
 <p><strong>Important Dates:</strong></p>
 <ul>
   <li><strong>Submission Deadline:</strong> April 4, 2026</li>
   <li><strong>Workshop Format Decision:</strong> April 6, 2026</li>
 </ul>
-
 <p class="mt-3">Join us in building the open, consistent software stack for the next generation of vehicles!</p>
-
     </div>
-
-    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://github.com/eclipse-score" target="_blank">
+    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://github.com/eclipse-score" target="\_blank">
       Visit S-CORE on GitHub
     </a>
   </div>
 </div>
 <!-- ========== END: Call for Contributions ========== -->
-
                 <!-- ========== START: S-CORE 0.6.0 Release Card (English Version) ========== -->
 <div class="main-blog-item-card d-flex flex-column gap-3">
   
@@ -153,16 +174,13 @@ breadcrumb_html: |
       <span class="date">Feb 23, 2026</span>
     </div>
     <h2 class="h2 mb-3">
-     Revoked: Eclipse S-CORE v0.6.0 Milestone Released!
+      Revoked: Eclipse S-CORE v0.6.0 Milestone Released!
     </h2>
     
     <!-- IMPORTANT: The markdown="1" attribute ensures the content is rendered correctly -->
     <div class="card-text mb-4" markdown="1">
-
 <p>Revoked: The milestone release was revoked due to incompatibility of some modules.</p>
-
 <h4 class="mt-4 mb-2">What's New in v0.6.0:</h4>
-
 <ul>
   <li>
     <strong>Dual-Language Platform:</strong> S-CORE now offers equal support for C++ and Rust, with 5 modules featuring Rust APIs and integration of the Ferrocene safety-critical Rust toolchain.
@@ -181,11 +199,9 @@ breadcrumb_html: |
     <strong>Matured Infrastructure:</strong> A comprehensive S-CORE Handbook, enhanced ISO 26262/21434 &amp; ASPICE 4.0 process compliance, and updates for QNX, Red Hat AutoSD, and more.
   </li>
 </ul>
-
   </div>
 </div>
 <!-- ========== END: S-CORE 0.6.0 Release Card (English Version) ========== -->
-
                 <div class="main-blog-item-card d-flex flex-column gap-3">
                   <div
                     class="blog-img d-flex align-items-center justify-content-center"
@@ -208,12 +224,12 @@ breadcrumb_html: |
                       Source: Eclipse SDV WG Linkedin <br/><br/>
                     </p>
                     <p>
-                        The first version of Eclipse S-CORE (Safe Open Vehicle Core) lays the groundwork for open, safety-ready automotive software.<br/>
-                        
+                      The first version of Eclipse S-CORE (Safe Open Vehicle Core) lays the groundwork for open, safety-ready automotive software.<br/>
+                      
                     </p>
                     <a
                       class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
-                      href="https://www.linkedin.com/posts/software-defined-vehicle_s-core-05-release-activity-7392145693861363712-JWqw" target="_blank"
+                      href="https://www.linkedin.com/posts/software-defined-vehicle_s-core-05-release-activity-7392145693861363712-JWqw" target="\_blank"
                     >
                       Read More and Discuss
                     </a>

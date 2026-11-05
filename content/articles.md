@@ -1,381 +1,220 @@
----
-title: "Eclipse S-CORE"
-render_raw: true
-extra_styles:
-  - "css/bootstrap.min.css"
-  - "css/loading.css"
-  - "css/navbar.css"
-  - "css/globals.css"
-  - "css/footer.css"
-  - "css/styleguide.css"
-  - "css/news.css"
-extra_scripts:
-  - "js/jquery-3.7.1.min.js"
-  - "js/bootstrap.min.js"
-  - "js/loading.js"
-use_shared_header: true
-use_shared_footer: true
-active_nav: "news"
-header_class: "news-page-header"
-header_title: "News & Events"
-breadcrumb_html: |
-  <li class="breadcrumb-item">
-    <a href="index.html" class="breadcrumb-link text-white">Home</a>
-  </li>
-  <li class="breadcrumb-item">
-    <a href="news.html" class="breadcrumb-link text-white">News &amp; Events</a>
-  </li>
-  <li class="breadcrumb-item active text-white" aria-current="page">
-    Articles
-  </li>
----
++++
+title = "Articles & News"
+description = "Project releases, community stories, and perspectives from across Eclipse S-CORE."
+type = "editorial"
+layout = "single"
+active_nav = "news"
+news_section = "articles"
+editorial_heading = "Articles & News"
+editorial_description = "Project releases, community stories, and perspectives from across Eclipse S-CORE."
+extra_styles = ["css/editorial.css"]
 
-<main class="main-section p-0 min-vh-100 d-flex flex-column">
-      <section class="esc-pages-section nav-tabs-section">
-        <div class="container">
-          <div class="nav-tabs-wrapper">
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a class="nav-link" href="news.html">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="press_releases.html">Press Releases</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="articles.html">Articles & News</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="townhalls.html">Townhalls</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section
-        class="esc-section esc-news-container-section pt-0 min-vh-100 mt-4"
-      >
-        <div class="container">
-          <div class="row w-100 g-4">
+[[articles.items]]
+date = "November 3, 2026"
+title = "Eclipse S-CORE 0.10 is here!"
+image = "images/news/score-v0-10-release.svg"
+image_alt = "Eclipse S-CORE 0.10 release graphic highlighting per-module tests, stakeholder-linked integration tests, and CI-generated SBOMs."
+summary = "A new milestone release with stronger integration testing, SBOM generation, and updated modules and developer tooling."
+action_label = "Read the 0.10 release notes"
+action_url = "https://eclipse-score.github.io/reference_integration/v0.10.0/s_core_v_1/releases/releases.html"
+external = true
+body = """
+Eclipse S-CORE 0.10 brings together updated platform modules and a more rigorous reference-integration workflow.
 
-            <div class="col-12 col-xl-8 gap-3 mt-0">
-              <div class="d-flex flex-column gap-3">
+Highlights include per-module testing against pinned integration dependencies, platform integration tests linked to stakeholder requirements, and a software bill of materials (SBOM) generated in CI. The release also updates Bazel to 8.8.2, adds the Tools and Devcontainer infrastructure modules, and improves verification reports and documentation bundles.
 
-<!-- ========== START: S-CORE 0.9 Milestone Release Card ========== -->
-<div class="main-blog-item-card d-flex flex-column gap-3">
-  <div class="blog-item-content">
-    <div class="top-pick-date d-flex align-items-center gap-2 mb-2">
-      <span class="icon d-flex align-items-center">
-        <img src="images/icons/calendar.svg" alt="Calendar Icon" />
-      </span>
-      <span class="date">September 7, 2026</span>
-    </div>
-    <h2 class="h2 mb-3">
-      Eclipse S-CORE 0.9 Milestone
-    </h2>
-    <div class="card-text mb-4" markdown="1">
-<p>We are happy to announce the release of Eclipse S-CORE 0.9 milestone. This update introduces architectural enhancements, new capabilities, and stability improvements.</p>
+**Upgrading from v0.9?** Review the release notes for breaking changes to the module-test workflow, QNX image paths, Persistency's KVS API and JSON format, and Lifecycle configuration.
 
-<h4 class="mt-4 mb-2"><b>What's New in 0.9?</b></h4>
-<p>This milestone represents a significant step forward in improving our platform integration, build reproducibility, and system configuration capabilities. It is centered on implementing our unified integration strategy, introducing a dedicated configuration management service, and updating our toolchains. Here are some of the highlights from this release:</p>
+0.10 advances the project’s quality-managed platform. It is not a production release or a safety certification; the release does not include completed safety argumentation and assessment.
+"""
 
-<h4 class="mt-4 mb-2"><b>Core Platform Enhancements</b></h4>
-<ul>
-  <li><b>Configuration Management:</b> Newly integrated into the platform for the first time, providing a dedicated configuration daemon and proxy API for platform-wide configuration handling.</li>
-  <li><b>Baselibs:</b> Our foundational libraries have been updated with stability fixes and now include an integrated workaround patch for QNX8 event polling.</li>
-  <li><b>Persistency:</b> This release introduces stability improvements to our persistency module, ensuring reliable non-volatile key-value data storage.</li>
-  <li><b>Logging:</b> Our logging framework has been updated alongside a newly added logging demo application in the reference integration to demonstrate diagnostic workflows.</li>
-  <li><b>Time:</b> The time abstraction module has been updated to align timing APIs with the latest foundational libraries.</li>
-  <li><b>Kyron:</b> Maintained at their stable baselines for deterministic time synchronization and service management.</li>
-</ul>
+[[articles.items]]
+date = "September 7, 2026"
+title = "Eclipse S-CORE 0.9 Milestone"
+body = """
+We are happy to announce the release of the Eclipse S-CORE 0.9 milestone. This update introduces architectural enhancements, new capabilities, and stability improvements.
 
-<h4 class="mt-4 mb-2"><b>Developer Experience, Integration, and Tooling</b></h4>
-<ul>
-  <li><b>Reference Integration:</b> Updates to Bazel 8.6.0, and includes the new logging demo.</li>
-  <li><b>Bazel Platforms:</b> Reached its first major version, establishing a stable baseline for target hardware and operating system definitions.</li>
-  <li><b>Docs-as-Code:</b> Our documentation-as-code toolchain has received a major version upgrade, improving documentation generation and traceability.</li>
-  <li><b>ITF (Integration Testing Framework):</b> Enhanced integration test runners and execution fixtures across local, containerized, and emulated target environments.</li>
-  <li><b>Process Description:</b> Updated and renamed to <code>score_process_description</code> in the Bazel registry for consistent governance across the project.</li>
-  <li><b>Tooling:</b> Upgraded development utilities with an integration patch ensuring continuous support for <code>rust_coverage_report</code>.</li>
-  <li><b>Bazel CPP Toolchain:</b> Maintained to ensure seamless compilation across supported target toolchains.</li>
-</ul>
-    </div>
-    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://github.com/eclipse-score/reference_integration/releases/tag/v0.9.0" target="_blank" rel="noopener noreferrer">
-      Get Started with Eclipse S-CORE 0.9
-    </a>
-  </div>
-</div>
-<!-- ========== END: S-CORE 0.9 Milestone Release Card ========== -->
+#### What's New in 0.9?
 
-<!-- ========== START: S-CORE v0.8 Release Gate News ========== -->
-<div class="main-blog-item-card d-flex flex-column gap-3">
-  <div class="blog-item-content">
-    <div class="top-pick-date d-flex align-items-center gap-2 mb-2">
-      <span class="date">July 28, 2026</span>
-    </div>
-    <h2 class="h2 mb-3">
-      Eclipse S-CORE has reached release gate v0.8!
-    </h2>
-    <div class="card-text mb-4" markdown="1">
-<p>This milestone raises the bar for what every module in scope for v1.0 has to demonstrate: complete, reviewed requirements and architecture documentation, including the safety artifacts that some modules had previously been able to defer. Meeting that bar is a multi-release effort, and v0.8 marks the point where the members committed to it project-wide.</p>
+This milestone represents a significant step forward in improving platform integration, build reproducibility, and system configuration capabilities. It focuses on implementing our unified integration strategy, introducing a dedicated configuration management service, and updating our toolchains. Here are some of the highlights from this release:
 
-<p>It is important to note that release gate v0.8 remains within QM (quality-managed) status. It is a structured step on the roadmap toward a safety-certifiable v1.0, not the certification itself.</p>
+#### Core Platform Enhancements
 
-<p>The project's trajectory toward v1.0 is defined by exactly this kind of rigor: building the documented evidence that safety-critical use requires, one release gate at a time, rather than asserting it upfront.</p>
+- **Configuration Management:** Newly integrated into the platform, providing a dedicated configuration daemon and proxy API for platform-wide configuration handling.
+- **Baselibs:** Our foundational libraries have been updated with stability fixes and now include an integrated workaround patch for QNX 8 event polling.
+- **Persistency:** This release introduces stability improvements to the persistency module, ensuring reliable non-volatile key-value data storage.
+- **Logging:** The logging framework has been updated, alongside a new logging demo application in the reference integration to demonstrate diagnostic workflows.
+- **Time:** The time abstraction module has been updated to align timing APIs with the latest foundational libraries.
+- **Kyron:** Maintained at stable baselines for deterministic time synchronization and service management.
 
-<p>The current status of all modules across each process area is tracked on the public roadmap page. [Link: <a href="https://eclipse-score.github.io/score/main/score_releases/index.html#releases" target="_blank" rel="noopener noreferrer">eclipse-score.github.io roadmap</a>]</p>
+#### Developer Experience, Integration, and Tooling
 
-<p>Interested in contributing to what comes next? Visit our Join Us page to get involved. [Link: <a href="https://eclipse.dev/score/training-modules.html" target="_blank" rel="noopener noreferrer">eclipse.dev/score/training-modules.html</a>]</p>
-    </div>
-  </div>
-</div>
-<!-- ========== END: S-CORE v0.8 Release Gate News ========== -->
-              
-<!-- ========== START: S-CORE 0.7.0 Release Card (English Version) ========== -->
-<div class="main-blog-item-card d-flex flex-column gap-3">
-  <div class="blog-item-content">
-    <div class="top-pick-date d-flex align-items-center gap-2 mb-2">
-      <span class="icon d-flex align-items-center">
-        <img src="images/icons/calendar.svg" alt="Calendar Icon" />
-      </span>
-      <span class="date">May 12, 2026</span>
-    </div>
-    <h2 class="h2 mb-3">
-      Eclipse S-CORE 0.7 is here!
-    </h2>
-    <div class="card-text mb-4" markdown="1">
-<p>The Eclipse Safe Open Vehicle Core (S-CORE) community is happy to announce the release of version 0.7.0. This significant update introduces a host of new features, enhancements, and stability improvements, reinforcing our commitment to providing an open and safe platform for the next generation of vehicle software.</p>
-<p>With our "Open by Choice - Safe by Design" philosophy, we are paving the way for a new era of collaborative development in the automotive sector. The 0.7 release marks a major milestone in our journey.</p>
-<h4 class="mt-4 mb-2"><b>What's New in 0.7?</b></h4>
-<p>While earlier releases focused on establishing the foundational architecture and introducing core capabilities, release 0.7 represents a significant step forward in the maturity of the platform. This version is centered on refinement and stabilization. We have concentrated on hardening the existing feature set, improving performance across the board, and enhancing the overall developer experience. This makes S-CORE not just more powerful, but also more robust and easier to adopt for complex automotive projects.</p>
-<p>Here are some of the highlights from this release:</p>
-<h4 class="mt-4 mb-2"><b>Core Platform Enhancements</b></h4>
-<ul>
-  <li><b>Baselibs (v0.2.7):</b> Our foundational libraries have been updated for better performance and stability, ensuring a rock-solid base for your applications.</li>
-  <li><b>Communication (v0.2.1):</b> We've improved our communication stack, making it easier to build robust and efficient inter-process communication.</li>
-  <li><b>Persistency (v0.3.2):</b> This release introduces enhancements to our persistency module, allowing for more reliable and flexible data storage solutions.</li>
-  <li><b>Logging (v0.2.0):</b> Our logging framework has been updated to provide more structured and insightful diagnostics, making it easier to debug and monitor your systems.</li>
-  <li><b>Orchestrator (v0.1.1):</b> The orchestrator has been refined to offer more precise control over service management and deployment.</li>
-  <li><b>Kyron (v0.1.2):</b> Our time synchronization module, Kyron, has been updated for greater accuracy, a critical feature for distributed automotive systems.</li>
-  <li><b>Lifecycle & Health Management (v0.2.0):</b> We've enhanced our lifecycle and health management capabilities, providing more robust mechanisms for monitoring and managing the state of your applications.</li>
-</ul>
-<h4 class="mt-4 mb-2"><b>Developer Experience and Tooling</b></h4>
-<ul>
-  <li><b>Reference Integration (v0.7):</b> The reference integration has been updated to bring all the new features and improvements together in a single, coherent package.</li>
-  <li><b>Process Description (v1.5.4):</b> We've improved our process description models, allowing for a more precise and expressive definition of system behavior.</li>
-  <li><b>Docs-as-Code (v4.0.3):</b> Our documentation-as-code toolchain has been upgraded, making it easier to create and maintain high-quality documentation.</li>
-  <li><b>Tooling (v1.1.2):</b> We've made several improvements to our development tools to streamline your workflow.</li>
-  <li><b>ITF (Integration Testing Framework) (v0.3.0) & Test Scenarios (v0.4.1):</b> Our testing frameworks have been enhanced to provide more comprehensive and efficient testing capabilities.</li>
-  <li><b>Bazel CPP Toolchain (v0.5.1):</b> The Bazel C++ toolchain has been updated to support the latest features and provide a more seamless build experience.</li>
-</ul>
-    </div>
-    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://github.com/eclipse-score/reference_integration/releases/tag/v0.7.0" target="_blank" rel="noopener noreferrer">
-      Get Started with Eclipse S-CORE 0.7
-    </a>
-  </div>
-</div>
-<!-- ========== END: S-CORE 0.7.0 Release Card (English Version) ========== -->
+- **Reference Integration:** Updated to Bazel 8.6.0 and includes the new logging demo.
+- **Bazel Platforms:** Reached its first major version, establishing a stable baseline for target hardware and operating system definitions.
+- **Docs-as-Code:** The documentation-as-code toolchain has received a major version upgrade, improving documentation generation and traceability.
+- **ITF (Integration Testing Framework):** Enhanced integration test runners and execution fixtures across local, containerized, and emulated target environments.
+- **Process Description:** Updated and renamed to `score_process_description` in the Bazel registry for consistent governance across the project.
+- **Tooling:** Development utilities have been upgraded with an integration patch to maintain continuous support for `rust_coverage_report`.
+- **Bazel CPP Toolchain:** Maintained to ensure seamless compilation across supported target toolchains.
+"""
 
-<!-- ========== START: NEW ARTICLE - OCX 2026 Recap ========== -->
-<div class="main-blog-item-card d-flex flex-column gap-3">
-  <div class="blog-img d-flex align-items-center justify-content-center">
-    <img src="images/news/OCX26.png" alt="OCX 2026 Community" />
-  </div>
-  <div class="blog-item-content">
-    <div class="top-pick-date d-flex align-items-center gap-2 mb-2">
-      <span class="icon d-flex align-items-center">
-        <img src="images/icons/calendar.svg" alt="Calendar Icon" />
-      </span>
-      <span class="date">April 24, 2026</span>
-    </div>
-    <h2 class="h2 mb-3">
-      OCX 2026: Community and Collaboration Drive the Future of Eclipse S-CORE
-    </h2>
-    <div class="card-text mb-4" markdown="1">
-      <p><strong>BRUSSELS, BE</strong> – The Eclipse Foundation's Open Community Experience (OCX) 2026 has successfully concluded, marking another milestone for open source innovation. The three-day event brought together developers, industry leaders, and researchers from around the globe for an inspiring series of collaborative sessions. For the Eclipse S-CORE project, it was a particularly impactful gathering, filled with deep dives into the future of the Software-Defined Vehicle (SDV).</p>
-      
-      <p>Discussions throughout the automotive track highlighted the project's growing maturity and strategic relevance, with several key presentations demonstrating the community's progress.</p>
-      
-      <p>Setting the stage, a joint presentation by Björn Reistel and Philipp Ahmann (ETAS GmbH) titled, <em>"Eclipse S-CORE: Open by Choice. Safe by Design. Driving Automotive Innovation Together!"</em> provided a comprehensive overview of the project's current status and its clear roadmap toward production readiness. Their talk underscored the advanced processes and the immense collaborative effort required to meet stringent automotive standards like ISO 26262.</p>
-      
-      <p>Functional safety, security, and reliability were central themes. Dr. Oliver Pajonk (Elektrobit) showcased the integration of Eclipse S-CORE with Elektrobit corbos Linux for Safety Applications, demonstrating a concrete, functionally safe software stack. This was complemented by Ulrich Huber (BMW AG) presenting an innovative, automated approach to enabling functional safety in open-source projects. Further deep dives included a session from Michael Schneider (AUMOVIO Germany GmbH) on critical cybersecurity challenges, and one from Isabella Stilkerich and Johannes Lex (Schaeffler Technologies), who presented a research project on increasing fault tolerance in new E/E architectures and an approach to examining system properties to increase system reliability.</p>
-      
-      <p>A presentation by Thilo Schmitt and Alexander Mohr (Mercedes-Benz Tech Innovation) on Eclipse OpenSOVD, explained how the project is creating a production-grade standard for vehicle diagnostics through open collaboration and how this integrated with the Eclipse S-CORE project. Laying out a path for other projects integrating with Eclipse S-CORE.</p>
-      
-      <p>Another highlight was the presentation on Eclipse OpenSOVD by Thilo Schmitt (Mercedes-Benz Tech Innovation), which demonstrated a clear model for ecosystem collaboration. He explained how OpenSOVD provides a production-grade standard for vehicle diagnostics by deeply integrating with the Eclipse S-CORE platform. This process now serves as a valuable blueprint, showing a successful pathway for other projects to integrate into the S-CORE landscape.</p>
-      
-      <p>The collective message from OCX 2026 is clear: the Eclipse S-CORE community is vibrant, growing, and collaboratively building the safe, secure, and open foundation for the future of automotive software. The insights and partnerships forged at this event will undoubtedly accelerate our journey toward a more open and scalable SDV landscape.</p>
-      
-      <h4 class="mt-4 mb-2"><b>Interested to join? Get Involved!</b></h4>
-      <p>As the next opportunity, the Eclipse S-CORE and Eclipse OpenSOVD projects will conduct a joint workshop to align further integration and next steps in alignment of process and collaboration:</p>
+[[articles.items]]
+date = "July 28, 2026"
+title = "Eclipse S-CORE has reached release gate v0.8!"
+body = """
+This milestone raises the bar for what every module in scope for v1.0 has to demonstrate: complete, reviewed requirements and architecture documentation, including the safety artifacts that some modules had previously been able to defer. Meeting that bar is a multi-release effort, and v0.8 marks the point where members committed to it project-wide.
 
-      <!-- Workshop Info Box -->
-      <div class="p-3 bg-light rounded border border-primary mt-3">
-        <h5 class="h5 fw-bold mb-3 text-primary">🤝 S-CORE & OpenSOVD Integration Workshop</h5>
-        <ul class="mb-0 list-unstyled d-flex flex-column gap-2">
-          <li><strong>📅 Date:</strong> May 20, 2026</li>
-          <li><strong>📍 Location:</strong> Mercedes-Benz Tech Innovation (MBTI) facilities, Wilhelm-Runge-Str. 11, 89081 Ulm, Germany.</li>
-          <li><strong>💻 Participation:</strong> Remote participation will be available; however, on-site attendance is strongly encouraged to ensure an effective and collaborative session.</li>
-        </ul>
-      </div>
-    </div>
-    <a class="read-more btn btn-primary main-primary mt-2 d-inline-block text-center" href="https://github.com/eclipse-score" target="_blank" rel="noopener noreferrer">
-      Get Involved with S-CORE
-    </a>
-  </div>
-</div>
-<!-- ========== END: NEW ARTICLE - OCX 2026 Recap ========== -->
+It is important to note that release gate v0.8 remains within QM (quality-managed) status. It is a structured step on the roadmap toward a safety-certifiable v1.0, not the certification itself.
 
-<!-- ========== START: Call for Contributions (English Version) ========== -->
-<div class="main-blog-item-card d-flex flex-column gap-3">
-  
-  <div class="blog-item-content">
-    <div class="top-pick-date d-flex align-items-center gap-2 mb-2">
-      <span class="icon d-flex align-items-center">
-        <img src="images/icons/calendar.svg" alt="Calendar Icon" />
-      </span>
-      <span class="date">March 23, 2026</span> 
-    </div>
-    <h2 class="h2 mb-3">
-      Shape the Future: Call for S-CORE Contributors & Maintainers!
-    </h2>
-    
-    <div class="card-text mb-4" markdown="1">
-<p>Eclipse S-CORE is actively seeking passionate contributors and dedicated maintainers to join us in shaping the core building blocks of the software-defined vehicle stack. This is a unique opportunity to actively influence, build, and maintain an open, consistent software foundation for the automotive industry's future.</p>
+The project's trajectory toward v1.0 is defined by exactly this kind of rigor: building the documented evidence that safety-critical use requires, one release gate at a time, rather than asserting it upfront.
 
-<p>We are specifically looking to expand our expertise and manpower in the following critical areas:</p>
-<ul>
-  <li>
-    <strong>Generative AI (GenAI):</strong> Help us define and integrate intelligent solutions into the S-CORE ecosystem.
-    <br><a href="https://github.com/eclipse-score/score/issues/1767?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="_blank" rel="noopener noreferrer" class="text-link">Learn more about GenAI opportunities</a>
-  </li>
-  <li>
-    <strong>AI Platform / Inference Engine:</strong> Drive the development of robust, automotive-grade AI execution capabilities within S-CORE.
-    <br><a href="https://github.com/eclipse-score/score/issues/1768?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="_blank" rel="noopener noreferrer">Explore AI Platform / Inference Engine roles</a>
-  </li>
-  <li>
-    <strong>Security &amp; Cryptography:</strong> Strengthen the security posture of S-CORE, ensuring trust and integrity for safety-critical applications.
-    <br><a href="https://github.com/eclipse-score/score/issues/2054?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226" target="_blank" rel="noopener noreferrer">Discover Security &amp; Cryptography challenges</a>
-  </li>
-</ul>
+The current status of all modules across each process area is tracked on the public [S-CORE release roadmap](https://eclipse-score.github.io/score/main/score_releases/index.html#releases).
 
-<p><strong>What We Are Looking For:</strong></p>
-<ul>
-  <li>Innovative implementation concepts.</li>
-  <li>Proposals for integrating existing open-source components.</li>
-  <li>New module proposals that align with S-CORE's strategic objectives.</li>
-</ul>
+Interested in contributing to what comes next? Visit the [Get Involved page](https://eclipse.dev/score/how_to_contribute.html) to find ways to participate.
+"""
 
-<p><strong>How To Contribute:</strong></p>
-<p>Ready to make an impact? Submit your detailed proposal via our defined process:</p>
-<ul>
-    <li><a href="https://github.com/eclipse-score/score/issues/1571?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226#issue-3289568769" target="_blank" rel="noopener noreferrer">Submit Your Proposal Here</a></li>
-</ul>
+[[articles.items]]
+date = "May 12, 2026"
+title = "Eclipse S-CORE 0.7 is here!"
+action_label = "Get started with Eclipse S-CORE 0.7"
+action_url = "https://github.com/eclipse-score/reference_integration/releases/tag/v0.7.0"
+external = true
+body = """
+The Eclipse Safe Open Vehicle Core (S-CORE) community is happy to announce the release of version 0.7.0. This significant update introduces a host of new features, enhancements, and stability improvements, reinforcing our commitment to providing an open and safe platform for the next generation of vehicle software.
 
-<p><strong>What Happens Next:</strong></p>
-<p>Selected contributions will be presented and discussed in the upcoming **Architecture Community Workshop in April 2026**. This workshop will be held either face-to-face or online, decision to be announced soon.</p>
+With our "Open by Choice - Safe by Design" philosophy, we are paving the way for a new era of collaborative development in the automotive sector. The 0.7 release marks a major milestone in our journey.
 
-<p><strong>Important Dates:</strong></p>
-<ul>
-  <li><strong>Submission Deadline:</strong> April 4, 2026</li>
-  <li><strong>Workshop Format Decision:</strong> April 6, 2026</li>
-</ul>
-<p class="mt-3">Join us in building the open, consistent software stack for the next generation of vehicles!</p>
-    </div>
-    <a class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center" href="https://github.com/eclipse-score" target="_blank" rel="noopener noreferrer">
-      Visit S-CORE on GitHub
-    </a>
-  </div>
-</div>
-<!-- ========== END: Call for Contributions ========== -->
+#### What's New in 0.7?
 
-<!-- ========== START: S-CORE 0.6.0 Release Card (English Version) ========== -->
-<div class="main-blog-item-card d-flex flex-column gap-3">
-  
-  <div class="blog-item-content">
-    <div class="top-pick-date d-flex align-items-center gap-2 mb-2">
-      <span class="icon d-flex align-items-center">
-        <img src="images/icons/calendar.svg" alt="Calendar Icon" />
-      </span>
-      <span class="date">Feb 23, 2026</span>
-    </div>
-    <h2 class="h2 mb-3">
-      Revoked: Eclipse S-CORE v0.6.0 Milestone Released!
-    </h2>
-    
-    <div class="card-text mb-4" markdown="1">
-<p>Revoked: The milestone release was revoked due to incompatibility of some modules.</p>
-<h4 class="mt-4 mb-2">What's New in v0.6.0:</h4>
-<ul>
-  <li>
-    <strong>Dual-Language Platform:</strong> S-CORE now offers equal support for C++ and Rust, with 5 modules featuring Rust APIs and integration of the Ferrocene safety-critical Rust toolchain.
-  </li>
-  <li>
-    <strong>Platform Expansion:</strong> Two major new modules added:
-    <ul>
-      <li><strong>Baselibs Rust:</strong> Foundation utilities for Rust development.</li>
-      <li><strong>Lifecycle &amp; Health Management:</strong> Launch Manager and Health Monitoring for robust process supervision.</li>
-    </ul>
-  </li>
-  <li>
-    <strong>Enhanced Capabilities:</strong> Rust backends for Persistency, Communication, and Logging, an interactive example menu, and full CI/CD automation with a unified Bazel module.
-  </li>
-  <li>
-    <strong>Matured Infrastructure:</strong> A comprehensive S-CORE Handbook, enhanced ISO 26262/21434 &amp; ASPICE 4.0 process compliance, and updates for QNX, Red Hat AutoSD, and more.
-  </li>
-</ul>
-    </div>
-  </div>
-</div>
-<!-- ========== END: S-CORE 0.6.0 Release Card (English Version) ========== -->
+While earlier releases focused on establishing the foundational architecture and introducing core capabilities, release 0.7 represents a significant step forward in the maturity of the platform. This version is centered on refinement and stabilization. We have concentrated on hardening the existing feature set, improving performance across the board, and enhancing the overall developer experience. This makes S-CORE not just more powerful, but also more robust and easier to adopt for complex automotive projects.
 
-                <div class="main-blog-item-card d-flex flex-column gap-3">
-                  <div
-                    class="blog-img d-flex align-items-center justify-content-center"
-                  >
-                    <img src="images/news/EF_Newsletter_2025_09.PNG" alt="" />
-                  </div>
-                  <div class="blog-item-content">
-                    <div
-                      class="top-pick-date d-flex align-items-center gap-2 mb-2"
-                    >
-                      <span class="icon d-flex align-items-center">
-                        <img src="images/icons/calendar.svg" alt="" />
-                      </span>
-                      <span class="date">Sept 30, 2025</span>
-                    </div>
-                    <h2 class="h2 mb-3">
-                      Eclipse S-CORE: A new approach to building automotive software together
-                    </h2>
-                    <p>
-                      by Valerie Hasler and Memsud Godinjak 
-                    </p>
-                    <a
-                      class="read-more btn btn-primary main-primary mt-4 d-inline-block text-center"
-                      href="https://newsroom.eclipse.org/eclipse-newsletter/2025/september/eclipse-s-core-new-approach-building-automotive-software-together"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Read More
-                    </a>
-                  </div>
-                </div>
-              
-              </div>
-              <div class="text-center mt-3">
-                <a
-                  class="show-more btn btn-primary main-outline-primary mt-4 d-inline-block text-center"
-                  href="#"
-                >
-                  Show More
-                </a>
-              </div>
-            </div>
-            <div class="col-12 col-xl-4 mt-xl-0 mt-5">
-              <div class="main-search-top-picks-card d-flex flex-column gap-4">
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-</main>
+Here are some of the highlights from this release:
+
+#### Core Platform Enhancements
+
+- **Baselibs (v0.2.7):** Our foundational libraries have been updated for better performance and stability, ensuring a rock-solid base for your applications.
+- **Communication (v0.2.1):** We've improved our communication stack, making it easier to build robust and efficient inter-process communication.
+- **Persistency (v0.3.2):** This release introduces enhancements to our persistency module, allowing for more reliable and flexible data storage solutions.
+- **Logging (v0.2.0):** Our logging framework has been updated to provide more structured and insightful diagnostics, making it easier to debug and monitor your systems.
+- **Orchestrator (v0.1.1):** The orchestrator has been refined to offer more precise control over service management and deployment.
+- **Kyron (v0.1.2):** Our time synchronization module, Kyron, has been updated for greater accuracy, a critical feature for distributed automotive systems.
+- **Lifecycle & Health Management (v0.2.0):** We've enhanced our lifecycle and health management capabilities, providing more robust mechanisms for monitoring and managing the state of your applications.
+
+#### Developer Experience and Tooling
+
+- **Reference Integration (v0.7):** The reference integration has been updated to bring all the new features and improvements together in a single, coherent package.
+- **Process Description (v1.5.4):** We've improved our process description models, allowing for a more precise and expressive definition of system behavior.
+- **Docs-as-Code (v4.0.3):** Our documentation-as-code toolchain has been upgraded, making it easier to create and maintain high-quality documentation.
+- **Tooling (v1.1.2):** We've made several improvements to our development tools to streamline your workflow.
+- **ITF (Integration Testing Framework) (v0.3.0) & Test Scenarios (v0.4.1):** Our testing frameworks have been enhanced to provide more comprehensive and efficient testing capabilities.
+- **Bazel CPP Toolchain (v0.5.1):** The Bazel C++ toolchain has been updated to support the latest features and provide a more seamless build experience.
+"""
+
+[[articles.items]]
+date = "April 24, 2026"
+title = "OCX 2026: Community and Collaboration Drive the Future of Eclipse S-CORE"
+image = "images/news/OCX26.png"
+image_alt = "Open Community Experience 2026"
+action_label = "Get involved with S-CORE"
+action_url = "https://github.com/eclipse-score"
+external = true
+body = """
+**BRUSSELS, BE** - The Eclipse Foundation's Open Community Experience (OCX) 2026 has successfully concluded, marking another milestone for open source innovation. The three-day event brought together developers, industry leaders, and researchers from around the globe for an inspiring series of collaborative sessions. For the Eclipse S-CORE project, it was a particularly impactful gathering, filled with deep dives into the future of the Software-Defined Vehicle (SDV).
+
+Discussions throughout the automotive track highlighted the project's growing maturity and strategic relevance, with several key presentations demonstrating the community's progress.
+
+Setting the stage, a joint presentation by Björn Reistel and Philipp Ahmann (ETAS GmbH) titled, *"Eclipse S-CORE: Open by Choice. Safe by Design. Driving Automotive Innovation Together!"* provided a comprehensive overview of the project's current status and its clear roadmap toward production readiness. Their talk underscored the advanced processes and the immense collaborative effort required to meet stringent automotive standards like ISO 26262.
+
+Functional safety, security, and reliability were central themes. Dr. Oliver Pajonk (Elektrobit) showcased the integration of Eclipse S-CORE with Elektrobit corbos Linux for Safety Applications, demonstrating a concrete, functionally safe software stack. This was complemented by Ulrich Huber (BMW AG) presenting an innovative, automated approach to enabling functional safety in open-source projects. Further deep dives included a session from Michael Schneider (AUMOVIO Germany GmbH) on critical cybersecurity challenges, and one from Isabella Stilkerich and Johannes Lex (Schaeffler Technologies), who presented a research project on increasing fault tolerance in new E/E architectures and an approach to examining system properties to increase system reliability.
+
+A presentation by Thilo Schmitt and Alexander Mohr (Mercedes-Benz Tech Innovation) on Eclipse OpenSOVD explained how the project is creating a production-grade standard for vehicle diagnostics through open collaboration and how this integrated with the Eclipse S-CORE project. Laying out a path for other projects integrating with Eclipse S-CORE.
+
+Another highlight was the presentation on Eclipse OpenSOVD by Thilo Schmitt (Mercedes-Benz Tech Innovation), which demonstrated a clear model for ecosystem collaboration. He explained how OpenSOVD provides a production-grade standard for vehicle diagnostics by deeply integrating with the Eclipse S-CORE platform. This process now serves as a valuable blueprint, showing a successful pathway for other projects to integrate into the S-CORE landscape.
+
+The collective message from OCX 2026 is clear: the Eclipse S-CORE community is vibrant, growing, and collaboratively building the safe, secure, and open foundation for the future of automotive software. The insights and partnerships forged at this event will undoubtedly accelerate our journey toward a more open and scalable SDV landscape.
+
+#### Interested to join? Get involved!
+
+As the next opportunity, the Eclipse S-CORE and Eclipse OpenSOVD projects will conduct a joint workshop to align further integration and next steps in alignment of process and collaboration:
+
+**S-CORE & OpenSOVD Integration Workshop**
+
+- **Date:** May 20, 2026
+- **Location:** Mercedes-Benz Tech Innovation (MBTI) facilities, Wilhelm-Runge-Str. 11, 89081 Ulm, Germany.
+- **Participation:** Remote participation will be available; however, on-site attendance is strongly encouraged to ensure an effective and collaborative session.
+"""
+
+[[articles.items]]
+date = "March 23, 2026"
+title = "Shape the Future: Call for S-CORE Contributors & Maintainers!"
+action_label = "Visit S-CORE on GitHub"
+action_url = "https://github.com/eclipse-score"
+external = true
+body = """
+Eclipse S-CORE is actively seeking passionate contributors and dedicated maintainers to join us in shaping the core building blocks of the software-defined vehicle stack. This is a unique opportunity to actively influence, build, and maintain an open, consistent software foundation for the automotive industry's future.
+
+We are specifically looking to expand our expertise and manpower in the following critical areas:
+
+- **Generative AI (GenAI):** Help us define and integrate intelligent solutions into the S-CORE ecosystem. [Learn more about GenAI opportunities](https://github.com/eclipse-score/score/issues/1767?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226)
+- **AI Platform / Inference Engine:** Drive the development of robust, automotive-grade AI execution capabilities within S-CORE. [Explore AI Platform / Inference Engine roles](https://github.com/eclipse-score/score/issues/1768?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226)
+- **Security & Cryptography:** Strengthen the security posture of S-CORE, ensuring trust and integrity for safety-critical applications. [Discover Security & Cryptography challenges](https://github.com/eclipse-score/score/issues/2054?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226)
+
+**What we are looking for:**
+
+- Innovative implementation concepts.
+- Proposals for integrating existing open-source components.
+- New module proposals that align with S-CORE's strategic objectives.
+
+**How to contribute:**
+
+Ready to make an impact? Submit your detailed proposal via our defined process: [Submit your proposal here](https://github.com/eclipse-score/score/issues/1571?utm_campaign=14701658-S-CORE&utm_content=373839234&utm_medium=social&utm_source=linkedin&hss_channel=lcp-82366226#issue-3289568769).
+
+**What happens next:**
+
+Selected contributions will be presented and discussed in the upcoming Architecture Community Workshop in April 2026. This workshop will be held either face-to-face or online, decision to be announced soon.
+
+**Important dates:**
+
+- **Submission deadline:** April 4, 2026
+- **Workshop format decision:** April 6, 2026
+
+Join us in building the open, consistent software stack for the next generation of vehicles!
+"""
+
+[[articles.items]]
+date = "Feb 23, 2026"
+title = "Revoked: Eclipse S-CORE v0.6.0 Milestone Released!"
+body = """
+Revoked: The milestone release was revoked due to incompatibility of some modules.
+
+#### What's new in v0.6.0
+
+- **Dual-Language Platform:** S-CORE now offers equal support for C++ and Rust, with 5 modules featuring Rust APIs and integration of the Ferrocene safety-critical Rust toolchain.
+- **Platform Expansion:** Two major new modules added:
+  - **Baselibs Rust:** Foundation utilities for Rust development.
+  - **Lifecycle & Health Management:** Launch Manager and Health Monitoring for robust process supervision.
+- **Enhanced Capabilities:** Rust backends for Persistency, Communication, and Logging, an interactive example menu, and full CI/CD automation with a unified Bazel module.
+- **Matured Infrastructure:** A comprehensive S-CORE Handbook, enhanced ISO 26262/21434 & ASPICE 4.0 process compliance, and updates for QNX, Red Hat AutoSD, and more.
+"""
+
+[[articles.items]]
+date = "Nov 6th, 2025"
+title = "Eclipse S-CORE 0.5 - What’s inside the first public release"
+image = "images/news/s-core_05_release_teaser.png"
+image_alt = "Eclipse S-CORE 0.5 release teaser"
+summary = "The first version of Eclipse S-CORE (Safe Open Vehicle Core) lays the groundwork for open, safety-ready automotive software."
+source = "Eclipse SDV WG LinkedIn"
+action_label = "Read more and discuss"
+action_url = "https://www.linkedin.com/posts/software-defined-vehicle_s-core-05-release-activity-7392145693861363712-JWqw"
+external = true
+
+[[articles.items]]
+date = "Sept 30, 2025"
+title = "Eclipse S-CORE: A new approach to building automotive software together"
+image = "images/news/EF_Newsletter_2025_09.PNG"
+image_alt = "Eclipse Foundation newsletter featuring S-CORE"
+summary = "By Valerie Hasler and Memsud Godinjak."
+action_label = "Read more"
+action_url = "https://newsroom.eclipse.org/eclipse-newsletter/2025/september/eclipse-s-core-new-approach-building-automotive-software-together"
+external = true
++++
